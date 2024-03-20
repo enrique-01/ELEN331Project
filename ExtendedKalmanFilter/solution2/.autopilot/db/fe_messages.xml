@@ -1,0 +1,168 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=extendedKalmanFilter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=gps_measurement_data type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=output_predict_data type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:57:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:66:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:85:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:93:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:100:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:109:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:120:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="FACTOR=2" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-188" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_128_22' (ExtendedKalmanFilter.cpp:128:24) in function 'extendedKalmanFilter' partially with a factor of 2">
+        <args Factor="2" LoopLoc="ExtendedKalmanFilter.cpp:128:24" LoopName="VITIS_LOOP_128_22"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_119_19' (ExtendedKalmanFilter.cpp:119:24) in function 'extendedKalmanFilter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="ExtendedKalmanFilter.cpp:119:24" LoopName="VITIS_LOOP_119_19"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_108_16' (ExtendedKalmanFilter.cpp:108:24) in function 'extendedKalmanFilter' completely with a factor of 2">
+        <args Factor="2" LoopLoc="ExtendedKalmanFilter.cpp:108:24" LoopName="VITIS_LOOP_108_16"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_99_13' (ExtendedKalmanFilter.cpp:99:23) in function 'extendedKalmanFilter' completely with a factor of 2">
+        <args Factor="2" LoopLoc="ExtendedKalmanFilter.cpp:99:23" LoopName="VITIS_LOOP_99_13"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-359" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_92_11' (ExtendedKalmanFilter.cpp:92:23) in function 'extendedKalmanFilter': changing partial unrolling into complete unrolling since the unrolling factor (=2) is no less than the loop trip count (=2).">
+        <args Factor="2" LoopLoc="ExtendedKalmanFilter.cpp:92:23" LoopName="VITIS_LOOP_92_11" TripCount="2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_92_11' (ExtendedKalmanFilter.cpp:92:23) in function 'extendedKalmanFilter' completely with a factor of 2">
+        <args Factor="2" LoopLoc="ExtendedKalmanFilter.cpp:92:23" LoopName="VITIS_LOOP_92_11"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_65_6' (ExtendedKalmanFilter.cpp:65:22) in function 'extendedKalmanFilter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="ExtendedKalmanFilter.cpp:65:22" LoopName="VITIS_LOOP_65_6"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_56_3' (ExtendedKalmanFilter.cpp:56:22) in function 'extendedKalmanFilter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="ExtendedKalmanFilter.cpp:56:22" LoopName="VITIS_LOOP_56_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Inlining function 'stateTransition(double*)' into 'extendedKalmanFilter(double*, double*)'">
+        <args Callee="stateTransition(double*)" Callee-DebugLoc="File ExtendedKalmanFilter.cpp Line 23 Column 0" Caller="extendedKalmanFilter(double*, double*)" Caller-DebugLoc="File ExtendedKalmanFilter.cpp Line 39 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Inlining function 'measurementFunction(double*)' into 'extendedKalmanFilter(double*, double*)'">
+        <args Callee="measurementFunction(double*)" Callee-DebugLoc="File ExtendedKalmanFilter.cpp Line 32 Column 0" Caller="extendedKalmanFilter(double*, double*)" Caller-DebugLoc="File ExtendedKalmanFilter.cpp Line 39 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Applying array_partition to 'gps_measurement_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="gps_measurement_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Applying array_partition to 'output_predict_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="output_predict_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:143:32" msg_body="Loop 'VITIS_LOOP_143_27' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_143_27"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:130:21" msg_body="Loop 'VITIS_LOOP_130_23' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_130_23"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:123:32" msg_body="Loop 'VITIS_LOOP_123_21' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_123_21"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:112:32" msg_body="Loop 'VITIS_LOOP_112_18' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_112_18"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:103:32" msg_body="Loop 'VITIS_LOOP_103_15' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_103_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:69:30" msg_body="Loop 'VITIS_LOOP_69_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_69_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:60:30" msg_body="Loop 'VITIS_LOOP_60_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_60_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_143_27' (ExtendedKalmanFilter.cpp:143:32) in function 'extendedKalmanFilter' completely with a factor of 2">
+        <args Factor="2" LoopLoc="ExtendedKalmanFilter.cpp:143:32" LoopName="VITIS_LOOP_143_27"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_130_23' (ExtendedKalmanFilter.cpp:130:21) in function 'extendedKalmanFilter' completely with a factor of 2">
+        <args Factor="2" LoopLoc="ExtendedKalmanFilter.cpp:130:21" LoopName="VITIS_LOOP_130_23"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_123_21' (ExtendedKalmanFilter.cpp:123:32) in function 'extendedKalmanFilter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="ExtendedKalmanFilter.cpp:123:32" LoopName="VITIS_LOOP_123_21"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_112_18' (ExtendedKalmanFilter.cpp:112:32) in function 'extendedKalmanFilter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="ExtendedKalmanFilter.cpp:112:32" LoopName="VITIS_LOOP_112_18"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_103_15' (ExtendedKalmanFilter.cpp:103:32) in function 'extendedKalmanFilter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="ExtendedKalmanFilter.cpp:103:32" LoopName="VITIS_LOOP_103_15"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_69_8' (ExtendedKalmanFilter.cpp:69:30) in function 'extendedKalmanFilter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="ExtendedKalmanFilter.cpp:69:30" LoopName="VITIS_LOOP_69_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_60_5' (ExtendedKalmanFilter.cpp:60:30) in function 'extendedKalmanFilter' completely with a factor of 4">
+        <args Factor="4" LoopLoc="ExtendedKalmanFilter.cpp:60:30" LoopName="VITIS_LOOP_60_5"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:15:0" msg_body="array_partition dim=1 type=complete  variable=P 1 extendedKalmanFilter ExtendedKalmanFilter.cpp:15:0 P">
+        <args PragmaFunction="extendedKalmanFilter" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=P" PragmaType="array_partition" VarName="P" varLoc="ExtendedKalmanFilter.cpp:15:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:15:0" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'P' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="P" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:15:0" msg_body="array_partition dim=2 type=complete  variable=P 1 extendedKalmanFilter ExtendedKalmanFilter.cpp:15:0 P">
+        <args PragmaFunction="extendedKalmanFilter" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=P" PragmaType="array_partition" VarName="P" varLoc="ExtendedKalmanFilter.cpp:15:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:15:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'P' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="P" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:55:12" msg_body="array_partition dim=2 type=complete  variable=tempP 1 extendedKalmanFilter ExtendedKalmanFilter.cpp:55:12 tempP">
+        <args PragmaFunction="extendedKalmanFilter" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=tempP" PragmaType="array_partition" VarName="tempP" varLoc="ExtendedKalmanFilter.cpp:55:12"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:55:12" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'tempP' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="tempP" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:98:12" msg_body="array_partition dim=2 type=complete  variable=temp 1 extendedKalmanFilter ExtendedKalmanFilter.cpp:98:12 temp">
+        <args PragmaFunction="extendedKalmanFilter" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=temp" PragmaType="array_partition" VarName="temp" varLoc="ExtendedKalmanFilter.cpp:98:12"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:98:12" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'temp' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="temp" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:117:12" msg_body="array_partition dim=1 type=complete  variable=K 1 extendedKalmanFilter ExtendedKalmanFilter.cpp:117:12 K">
+        <args PragmaFunction="extendedKalmanFilter" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=K" PragmaType="array_partition" VarName="K" varLoc="ExtendedKalmanFilter.cpp:117:12"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:117:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'K' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="K" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:118:12" msg_body="array_partition dim=1 type=complete  variable=temp1 1 extendedKalmanFilter ExtendedKalmanFilter.cpp:118:12 temp1">
+        <args PragmaFunction="extendedKalmanFilter" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=temp1" PragmaType="array_partition" VarName="temp1" varLoc="ExtendedKalmanFilter.cpp:118:12"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:118:12" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'temp1' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="temp1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:15:0" msg_body="Applying array_partition to 'P': Complete partitioning on dimension 1. Complete partitioning on dimension 2.">
+        <args Dim="islist 1 2" Mode="islist Complete Complete" UOName="P"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:55:12" msg_body="Applying array_partition to 'tempP': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="tempP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:98:12" msg_body="Applying array_partition to 'temp': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="temp"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:117:12" msg_body="Applying array_partition to 'K': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="K"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:118:12" msg_body="Applying array_partition to 'temp1': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="temp1"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

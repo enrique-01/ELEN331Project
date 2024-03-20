@@ -1,0 +1,2159 @@
+<profile>
+    <ReportVersion>
+        <Version>2023.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>kintex7</ProductFamily>
+        <Part>xc7k160t-fbg676-2</Part>
+        <TopModelName>extendedKalmanFilter</TopModelName>
+        <TargetClockPeriod>4.00</TargetClockPeriod>
+        <ClockUncertainty>1.08</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>3.483</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>733</Best-caseLatency>
+            <Average-caseLatency>733</Average-caseLatency>
+            <Worst-caseLatency>733</Worst-caseLatency>
+            <Best-caseRealTimeLatency>2.932 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>2.932 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>2.932 us</Worst-caseRealTimeLatency>
+            <Interval-min>734</Interval-min>
+            <Interval-max>734</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>ExtendedKalmanFilter.cpp:39</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>2</BRAM_18K>
+            <DSP>326</DSP>
+            <FF>64384</FF>
+            <LUT>38078</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>650</BRAM_18K>
+            <DSP>600</DSP>
+            <FF>202800</FF>
+            <LUT>101400</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>extendedKalmanFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst</name>
+            <Object>extendedKalmanFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_start</name>
+            <Object>extendedKalmanFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_done</name>
+            <Object>extendedKalmanFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_idle</name>
+            <Object>extendedKalmanFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_ready</name>
+            <Object>extendedKalmanFilter</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>gps_measurement_data_0</name>
+            <Object>gps_measurement_data_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>gps_measurement_data_1</name>
+            <Object>gps_measurement_data_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_predict_data_0</name>
+            <Object>output_predict_data_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_predict_data_0_ap_vld</name>
+            <Object>output_predict_data_0</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_predict_data_1</name>
+            <Object>output_predict_data_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>64</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>output_predict_data_1_ap_vld</name>
+            <Object>output_predict_data_1</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="3">
+            <ModuleName>extendedKalmanFilter</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>384</ID>
+                    <BindInstances>add_ln58_fu_272_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>408</ID>
+                    <BindInstances>add_ln58_fu_272_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>432</ID>
+                    <BindInstances>add_ln58_fu_272_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>456</ID>
+                    <BindInstances>add_ln58_fu_272_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>480</ID>
+                    <BindInstances>add_ln94_fu_61_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>485</ID>
+                    <BindInstances>add_ln94_fu_61_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>490</ID>
+                    <BindInstances>add_ln67_fu_235_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>514</ID>
+                    <BindInstances>add_ln67_fu_235_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>538</ID>
+                    <BindInstances>add_ln67_fu_235_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>562</ID>
+                    <BindInstances>add_ln67_fu_235_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>586</ID>
+                    <BindInstances>add_ln101_fu_272_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>610</ID>
+                    <BindInstances>add_ln101_fu_272_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>634</ID>
+                    <BindInstances>add_ln121_fu_143_p2 dmul_64ns_64ns_64_15_max_dsp_1_U335 dadd_64ns_64ns_64_13_full_dsp_1_U331 dmul_64ns_64ns_64_15_max_dsp_1_U336 dadd_64ns_64ns_64_13_full_dsp_1_U332 dmul_64ns_64ns_64_15_max_dsp_1_U337 dadd_64ns_64ns_64_13_full_dsp_1_U333 dmul_64ns_64ns_64_15_max_dsp_1_U338 dadd_64ns_64ns_64_13_full_dsp_1_U334</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>644</ID>
+                    <BindInstances>add_ln121_fu_143_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>654</ID>
+                    <BindInstances>add_ln121_fu_143_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>664</ID>
+                    <BindInstances>add_ln121_fu_143_p2 dadd_64ns_64ns_64_13_full_dsp_1_U373 dadd_64ns_64ns_64_13_full_dsp_1_U374 dmul_64ns_64ns_64_15_max_dsp_1_U379 dadd_64ns_64ns_64_13_full_dsp_1_U375 dmul_64ns_64ns_64_15_max_dsp_1_U380 dadd_64ns_64ns_64_13_full_dsp_1_U376</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>674</ID>
+                    <BindInstances>add_ln110_fu_143_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>684</ID>
+                    <BindInstances>add_ln110_fu_143_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>694</ID>
+                    <BindInstances>ddiv_64ns_64ns_64_59_no_dsp_1_U387 ddiv_64ns_64ns_64_59_no_dsp_1_U388 ddiv_64ns_64ns_64_59_no_dsp_1_U389 ddiv_64ns_64ns_64_59_no_dsp_1_U390 add_ln128_fu_302_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24_fu_716</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>716</ID>
+                    <BindInstances>add_ln135_fu_227_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>742</ID>
+                    <BindInstances>add_ln140_1_fu_184_p2 add_ln140_fu_196_p2 add_ln142_fu_310_p2 add_ln141_fu_280_p2</BindInstances>
+                </Instance>
+                <Instance>
+                    <InstName>grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755</InstName>
+                    <ModuleName>extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>755</ID>
+                    <BindInstances>add_ln148_1_fu_407_p2 add_ln148_fu_419_p2 add_ln150_fu_463_p2 add_ln149_fu_648_p2</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>temp2_U dadd_64ns_64ns_64_13_full_dsp_1_U489 dadd_64ns_64ns_64_13_full_dsp_1_U490 dadd_64ns_64ns_64_13_full_dsp_1_U489 dadd_64ns_64ns_64_13_full_dsp_1_U490 dsub_64ns_64ns_64_13_full_dsp_1_U491 dsub_64ns_64ns_64_13_full_dsp_1_U492</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4</Name>
+            <Loops>
+                <VITIS_LOOP_58_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>59</Best-caseLatency>
+                    <Average-caseLatency>59</Average-caseLatency>
+                    <Worst-caseLatency>59</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.236 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.236 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.236 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>59</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_58_4>
+                        <Name>VITIS_LOOP_58_4</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>57</Latency>
+                        <AbsoluteTimeLatency>0.228 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>55</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_58_4>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:58</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_58_4>
+                            <Name>VITIS_LOOP_58_4</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:58</SourceLocation>
+                        </VITIS_LOOP_58_4>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1139</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>194</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_58_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_fu_272_p2" SOURCE="ExtendedKalmanFilter.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41</Name>
+            <Loops>
+                <VITIS_LOOP_58_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>72</Best-caseLatency>
+                    <Average-caseLatency>72</Average-caseLatency>
+                    <Worst-caseLatency>72</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.288 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.288 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.288 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>72</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_58_4>
+                        <Name>VITIS_LOOP_58_4</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>70</Latency>
+                        <AbsoluteTimeLatency>0.280 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>68</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_58_4>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:58</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_58_4>
+                            <Name>VITIS_LOOP_58_4</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:58</SourceLocation>
+                        </VITIS_LOOP_58_4>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1165</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>194</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_58_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_fu_272_p2" SOURCE="ExtendedKalmanFilter.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42</Name>
+            <Loops>
+                <VITIS_LOOP_58_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>72</Best-caseLatency>
+                    <Average-caseLatency>72</Average-caseLatency>
+                    <Worst-caseLatency>72</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.288 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.288 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.288 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>72</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_58_4>
+                        <Name>VITIS_LOOP_58_4</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>70</Latency>
+                        <AbsoluteTimeLatency>0.280 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>68</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_58_4>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:58</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_58_4>
+                            <Name>VITIS_LOOP_58_4</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:58</SourceLocation>
+                        </VITIS_LOOP_58_4>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1165</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>194</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_58_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_fu_272_p2" SOURCE="ExtendedKalmanFilter.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43</Name>
+            <Loops>
+                <VITIS_LOOP_58_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>72</Best-caseLatency>
+                    <Average-caseLatency>72</Average-caseLatency>
+                    <Worst-caseLatency>72</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.288 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.288 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.288 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>72</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_58_4>
+                        <Name>VITIS_LOOP_58_4</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>70</Latency>
+                        <AbsoluteTimeLatency>0.280 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>68</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_58_4>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:58</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_58_4>
+                            <Name>VITIS_LOOP_58_4</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:58</SourceLocation>
+                        </VITIS_LOOP_58_4>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1165</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>194</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_58_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln58_fu_272_p2" SOURCE="ExtendedKalmanFilter.cpp:58" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln58"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7</Name>
+            <Loops>
+                <VITIS_LOOP_67_7/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>73</Best-caseLatency>
+                    <Average-caseLatency>73</Average-caseLatency>
+                    <Worst-caseLatency>73</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.292 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.292 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.292 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>73</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_67_7>
+                        <Name>VITIS_LOOP_67_7</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>71</Latency>
+                        <AbsoluteTimeLatency>0.284 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_67_7>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:67</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_67_7>
+                            <Name>VITIS_LOOP_67_7</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:67</SourceLocation>
+                        </VITIS_LOOP_67_7>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1295</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>230</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_67_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln67_fu_235_p2" SOURCE="ExtendedKalmanFilter.cpp:67" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln67"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74</Name>
+            <Loops>
+                <VITIS_LOOP_67_7/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>73</Best-caseLatency>
+                    <Average-caseLatency>73</Average-caseLatency>
+                    <Worst-caseLatency>73</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.292 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.292 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.292 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>73</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_67_7>
+                        <Name>VITIS_LOOP_67_7</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>71</Latency>
+                        <AbsoluteTimeLatency>0.284 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_67_7>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:67</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_67_7>
+                            <Name>VITIS_LOOP_67_7</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:67</SourceLocation>
+                        </VITIS_LOOP_67_7>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1295</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>230</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_67_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln67_fu_235_p2" SOURCE="ExtendedKalmanFilter.cpp:67" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln67"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75</Name>
+            <Loops>
+                <VITIS_LOOP_67_7/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>73</Best-caseLatency>
+                    <Average-caseLatency>73</Average-caseLatency>
+                    <Worst-caseLatency>73</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.292 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.292 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.292 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>73</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_67_7>
+                        <Name>VITIS_LOOP_67_7</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>71</Latency>
+                        <AbsoluteTimeLatency>0.284 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_67_7>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:67</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_67_7>
+                            <Name>VITIS_LOOP_67_7</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:67</SourceLocation>
+                        </VITIS_LOOP_67_7>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1295</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>230</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_67_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln67_fu_235_p2" SOURCE="ExtendedKalmanFilter.cpp:67" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln67"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76</Name>
+            <Loops>
+                <VITIS_LOOP_67_7/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>73</Best-caseLatency>
+                    <Average-caseLatency>73</Average-caseLatency>
+                    <Worst-caseLatency>73</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.292 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.292 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.292 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>73</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_67_7>
+                        <Name>VITIS_LOOP_67_7</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>71</Latency>
+                        <AbsoluteTimeLatency>0.284 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_67_7>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:67</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_67_7>
+                            <Name>VITIS_LOOP_67_7</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:67</SourceLocation>
+                        </VITIS_LOOP_67_7>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1295</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>230</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_67_7" OPTYPE="add" PRAGMA="" RTLNAME="add_ln67_fu_235_p2" SOURCE="ExtendedKalmanFilter.cpp:67" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln67"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12</Name>
+            <Loops>
+                <VITIS_LOOP_94_12/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.516</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4</Best-caseLatency>
+                    <Average-caseLatency>4</Average-caseLatency>
+                    <Worst-caseLatency>4</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>16.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>16.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>16.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_94_12>
+                        <Name>VITIS_LOOP_94_12</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>2</Latency>
+                        <AbsoluteTimeLatency>8.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_94_12>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:94</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_94_12>
+                            <Name>VITIS_LOOP_94_12</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:95</SourceLocation>
+                        </VITIS_LOOP_94_12>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>68</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>184</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_94_12" OPTYPE="add" PRAGMA="" RTLNAME="add_ln94_fu_61_p2" SOURCE="ExtendedKalmanFilter.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln94"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127</Name>
+            <Loops>
+                <VITIS_LOOP_94_12/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.516</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>4</Best-caseLatency>
+                    <Average-caseLatency>4</Average-caseLatency>
+                    <Worst-caseLatency>4</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>16.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>16.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>16.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>4</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_94_12>
+                        <Name>VITIS_LOOP_94_12</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>2</Latency>
+                        <AbsoluteTimeLatency>8.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_94_12>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:94</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_94_12>
+                            <Name>VITIS_LOOP_94_12</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:95</SourceLocation>
+                        </VITIS_LOOP_94_12>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>68</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>184</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_94_12" OPTYPE="add" PRAGMA="" RTLNAME="add_ln94_fu_61_p2" SOURCE="ExtendedKalmanFilter.cpp:94" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln94"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14</Name>
+            <Loops>
+                <VITIS_LOOP_101_14/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>59</Best-caseLatency>
+                    <Average-caseLatency>59</Average-caseLatency>
+                    <Worst-caseLatency>59</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.236 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.236 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.236 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>59</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_101_14>
+                        <Name>VITIS_LOOP_101_14</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>57</Latency>
+                        <AbsoluteTimeLatency>0.228 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>55</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_101_14>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:101</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_101_14>
+                            <Name>VITIS_LOOP_101_14</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:101</SourceLocation>
+                        </VITIS_LOOP_101_14>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1139</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>194</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_101_14" OPTYPE="add" PRAGMA="" RTLNAME="add_ln101_fu_272_p2" SOURCE="ExtendedKalmanFilter.cpp:101" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln101"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148</Name>
+            <Loops>
+                <VITIS_LOOP_101_14/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>72</Best-caseLatency>
+                    <Average-caseLatency>72</Average-caseLatency>
+                    <Worst-caseLatency>72</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.288 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.288 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.288 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>72</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_101_14>
+                        <Name>VITIS_LOOP_101_14</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>70</Latency>
+                        <AbsoluteTimeLatency>0.280 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>68</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_101_14>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:101</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_101_14>
+                            <Name>VITIS_LOOP_101_14</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:101</SourceLocation>
+                        </VITIS_LOOP_101_14>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1165</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>194</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_101_14" OPTYPE="add" PRAGMA="" RTLNAME="add_ln101_fu_272_p2" SOURCE="ExtendedKalmanFilter.cpp:101" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln101"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17</Name>
+            <Loops>
+                <VITIS_LOOP_110_17/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>71</Best-caseLatency>
+                    <Average-caseLatency>71</Average-caseLatency>
+                    <Worst-caseLatency>71</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.284 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.284 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.284 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>71</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_110_17>
+                        <Name>VITIS_LOOP_110_17</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>69</Latency>
+                        <AbsoluteTimeLatency>0.276 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_110_17>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:110</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_110_17>
+                            <Name>VITIS_LOOP_110_17</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:111</SourceLocation>
+                        </VITIS_LOOP_110_17>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>865</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>320</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_110_17" OPTYPE="add" PRAGMA="" RTLNAME="add_ln110_fu_143_p2" SOURCE="ExtendedKalmanFilter.cpp:110" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln110"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179</Name>
+            <Loops>
+                <VITIS_LOOP_110_17/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>71</Best-caseLatency>
+                    <Average-caseLatency>71</Average-caseLatency>
+                    <Worst-caseLatency>71</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.284 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.284 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.284 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>71</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_110_17>
+                        <Name>VITIS_LOOP_110_17</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>69</Latency>
+                        <AbsoluteTimeLatency>0.276 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_110_17>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:110</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_110_17>
+                            <Name>VITIS_LOOP_110_17</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:111</SourceLocation>
+                        </VITIS_LOOP_110_17>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>865</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>320</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_110_17" OPTYPE="add" PRAGMA="" RTLNAME="add_ln110_fu_143_p2" SOURCE="ExtendedKalmanFilter.cpp:110" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln110"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20</Name>
+            <Loops>
+                <VITIS_LOOP_121_20/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>71</Best-caseLatency>
+                    <Average-caseLatency>71</Average-caseLatency>
+                    <Worst-caseLatency>71</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.284 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.284 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.284 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>71</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_121_20>
+                        <Name>VITIS_LOOP_121_20</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>69</Latency>
+                        <AbsoluteTimeLatency>0.276 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_121_20>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:121</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_121_20>
+                            <Name>VITIS_LOOP_121_20</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:122</SourceLocation>
+                        </VITIS_LOOP_121_20>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>56</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>9</UTIL_DSP>
+                    <FF>7105</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>3</UTIL_FF>
+                    <LUT>4759</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>4</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_121_20" OPTYPE="add" PRAGMA="" RTLNAME="add_ln121_fu_143_p2" SOURCE="ExtendedKalmanFilter.cpp:121" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln121"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_121_20" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U335" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="mul2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_121_20" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U331" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="add4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_121_20" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U336" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="mul258_s"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_121_20" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U332" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="add263_s"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_121_20" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U337" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="mul258_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_121_20" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U333" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="add263_4"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_121_20" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U338" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="mul258_5"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_121_20" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U334" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="temp1_0"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010</Name>
+            <Loops>
+                <VITIS_LOOP_121_20/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>71</Best-caseLatency>
+                    <Average-caseLatency>71</Average-caseLatency>
+                    <Worst-caseLatency>71</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.284 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.284 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.284 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>71</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_121_20>
+                        <Name>VITIS_LOOP_121_20</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>69</Latency>
+                        <AbsoluteTimeLatency>0.276 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_121_20>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:121</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_121_20>
+                            <Name>VITIS_LOOP_121_20</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:122</SourceLocation>
+                        </VITIS_LOOP_121_20>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>929</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>375</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_121_20" OPTYPE="add" PRAGMA="" RTLNAME="add_ln121_fu_143_p2" SOURCE="ExtendedKalmanFilter.cpp:121" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln121"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011</Name>
+            <Loops>
+                <VITIS_LOOP_121_20/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>71</Best-caseLatency>
+                    <Average-caseLatency>71</Average-caseLatency>
+                    <Worst-caseLatency>71</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.284 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.284 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.284 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>71</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_121_20>
+                        <Name>VITIS_LOOP_121_20</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>69</Latency>
+                        <AbsoluteTimeLatency>0.276 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_121_20>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:121</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_121_20>
+                            <Name>VITIS_LOOP_121_20</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:122</SourceLocation>
+                        </VITIS_LOOP_121_20>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>929</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>375</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_121_20" OPTYPE="add" PRAGMA="" RTLNAME="add_ln121_fu_143_p2" SOURCE="ExtendedKalmanFilter.cpp:121" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln121"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012</Name>
+            <Loops>
+                <VITIS_LOOP_121_20/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>71</Best-caseLatency>
+                    <Average-caseLatency>71</Average-caseLatency>
+                    <Worst-caseLatency>71</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.284 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.284 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.284 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>71</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_121_20>
+                        <Name>VITIS_LOOP_121_20</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>69</Latency>
+                        <AbsoluteTimeLatency>0.276 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>69</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_121_20>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:121</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_121_20>
+                            <Name>VITIS_LOOP_121_20</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:122</SourceLocation>
+                        </VITIS_LOOP_121_20>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <DSP>34</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>5</UTIL_DSP>
+                    <FF>5975</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>2</UTIL_FF>
+                    <LUT>4167</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>4</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_121_20" OPTYPE="add" PRAGMA="" RTLNAME="add_ln121_fu_143_p2" SOURCE="ExtendedKalmanFilter.cpp:121" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln121"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_121_20" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U373" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="add263_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_121_20" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U374" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="add263_3_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_121_20" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U379" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="mul258_3_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_121_20" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U375" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="add263_3_2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_121_20" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U380" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="mul258_3_3"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_121_20" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U376" SOURCE="ExtendedKalmanFilter.cpp:124" STORAGESUBTYPE="" URAM="0" VARIABLE="temp1_0"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22</Name>
+            <Loops>
+                <VITIS_LOOP_128_22/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.811</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>63</Best-caseLatency>
+                    <Average-caseLatency>63</Average-caseLatency>
+                    <Worst-caseLatency>63</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.252 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.252 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.252 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>63</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_128_22>
+                        <Name>VITIS_LOOP_128_22</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>2</TripCount>
+                        <Latency>61</Latency>
+                        <AbsoluteTimeLatency>0.244 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>61</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_128_22>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:128</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_128_22>
+                            <Name>VITIS_LOOP_128_22</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:128</SourceLocation>
+                        </VITIS_LOOP_128_22>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1278</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>902</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ddiv" DSP="0" ID="" IMPL="fabric" LATENCY="58" LOOP="VITIS_LOOP_128_22" OPTYPE="ddiv" PRAGMA="" RTLNAME="ddiv_64ns_64ns_64_59_no_dsp_1_U387" SOURCE="ExtendedKalmanFilter.cpp:131" STORAGESUBTYPE="" URAM="0" VARIABLE="div"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ddiv" DSP="0" ID="" IMPL="fabric" LATENCY="58" LOOP="VITIS_LOOP_128_22" OPTYPE="ddiv" PRAGMA="" RTLNAME="ddiv_64ns_64ns_64_59_no_dsp_1_U388" SOURCE="ExtendedKalmanFilter.cpp:131" STORAGESUBTYPE="" URAM="0" VARIABLE="div_s"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ddiv" DSP="0" ID="" IMPL="fabric" LATENCY="58" LOOP="VITIS_LOOP_128_22" OPTYPE="ddiv" PRAGMA="" RTLNAME="ddiv_64ns_64ns_64_59_no_dsp_1_U389" SOURCE="ExtendedKalmanFilter.cpp:131" STORAGESUBTYPE="" URAM="0" VARIABLE="div_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ddiv" DSP="0" ID="" IMPL="fabric" LATENCY="58" LOOP="VITIS_LOOP_128_22" OPTYPE="ddiv" PRAGMA="" RTLNAME="ddiv_64ns_64ns_64_59_no_dsp_1_U390" SOURCE="ExtendedKalmanFilter.cpp:131" STORAGESUBTYPE="" URAM="0" VARIABLE="div_1_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_128_22" OPTYPE="add" PRAGMA="" RTLNAME="add_ln128_fu_302_p2" SOURCE="ExtendedKalmanFilter.cpp:128" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln128"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24</Name>
+            <Loops>
+                <VITIS_LOOP_135_24/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>2.796</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>125</Best-caseLatency>
+                    <Average-caseLatency>125</Average-caseLatency>
+                    <Worst-caseLatency>125</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.500 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.500 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.500 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>125</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_135_24>
+                        <Name>VITIS_LOOP_135_24</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>4</TripCount>
+                        <Latency>123</Latency>
+                        <AbsoluteTimeLatency>0.492 us</AbsoluteTimeLatency>
+                        <PipelineII>27</PipelineII>
+                        <PipelineDepth>43</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_135_24>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:135</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_135_24>
+                            <Name>VITIS_LOOP_135_24</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:135</SourceLocation>
+                        </VITIS_LOOP_135_24>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>678</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>394</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_135_24" OPTYPE="add" PRAGMA="" RTLNAME="add_ln135_fu_227_p2" SOURCE="ExtendedKalmanFilter.cpp:135" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln135"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26</Name>
+            <Loops>
+                <VITIS_LOOP_140_25_VITIS_LOOP_141_26/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>3.212</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>59</Best-caseLatency>
+                    <Average-caseLatency>59</Average-caseLatency>
+                    <Worst-caseLatency>59</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.236 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.236 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.236 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>59</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_140_25_VITIS_LOOP_141_26>
+                        <Name>VITIS_LOOP_140_25_VITIS_LOOP_141_26</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>16</TripCount>
+                        <Latency>57</Latency>
+                        <AbsoluteTimeLatency>0.228 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>43</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_140_25_VITIS_LOOP_141_26>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:141</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_140_25_VITIS_LOOP_141_26>
+                            <Name>VITIS_LOOP_140_25_VITIS_LOOP_141_26</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:140</SourceLocation>
+                        </VITIS_LOOP_140_25_VITIS_LOOP_141_26>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>878</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>355</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_140_25_VITIS_LOOP_141_26" OPTYPE="add" PRAGMA="" RTLNAME="add_ln140_1_fu_184_p2" SOURCE="ExtendedKalmanFilter.cpp:140" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln140_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_140_25_VITIS_LOOP_141_26" OPTYPE="add" PRAGMA="" RTLNAME="add_ln140_fu_196_p2" SOURCE="ExtendedKalmanFilter.cpp:140" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln140"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_140_25_VITIS_LOOP_141_26" OPTYPE="add" PRAGMA="" RTLNAME="add_ln142_fu_310_p2" SOURCE="ExtendedKalmanFilter.cpp:142" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln142"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_140_25_VITIS_LOOP_141_26" OPTYPE="add" PRAGMA="" RTLNAME="add_ln141_fu_280_p2" SOURCE="ExtendedKalmanFilter.cpp:141" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln141"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29</Name>
+            <Loops>
+                <VITIS_LOOP_148_28_VITIS_LOOP_149_29/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>3.483</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>228</Best-caseLatency>
+                    <Average-caseLatency>228</Average-caseLatency>
+                    <Worst-caseLatency>228</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.912 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.912 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.912 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>228</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_148_28_VITIS_LOOP_149_29>
+                        <Name>VITIS_LOOP_148_28_VITIS_LOOP_149_29</Name>
+                        <Slack>2.92</Slack>
+                        <TripCount>16</TripCount>
+                        <Latency>226</Latency>
+                        <AbsoluteTimeLatency>0.904 us</AbsoluteTimeLatency>
+                        <PipelineII>14</PipelineII>
+                        <PipelineDepth>17</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <InstanceList/>
+                    </VITIS_LOOP_148_28_VITIS_LOOP_149_29>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>Timing Violation</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:149</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_148_28_VITIS_LOOP_149_29>
+                            <Name>VITIS_LOOP_148_28_VITIS_LOOP_149_29</Name>
+                            <IssueType>II Violation</IssueType>
+                            <ViolationType>Memory Dependency</ViolationType>
+                            <IterationDistance>1</IterationDistance>
+                            <SourceLocation>ExtendedKalmanFilter.cpp:148</SourceLocation>
+                        </VITIS_LOOP_148_28_VITIS_LOOP_149_29>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>1268</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>607</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_148_28_VITIS_LOOP_149_29" OPTYPE="add" PRAGMA="" RTLNAME="add_ln148_1_fu_407_p2" SOURCE="ExtendedKalmanFilter.cpp:148" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln148_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_148_28_VITIS_LOOP_149_29" OPTYPE="add" PRAGMA="" RTLNAME="add_ln148_fu_419_p2" SOURCE="ExtendedKalmanFilter.cpp:148" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln148"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_148_28_VITIS_LOOP_149_29" OPTYPE="add" PRAGMA="" RTLNAME="add_ln150_fu_463_p2" SOURCE="ExtendedKalmanFilter.cpp:150" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln150"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_148_28_VITIS_LOOP_149_29" OPTYPE="add" PRAGMA="" RTLNAME="add_ln149_fu_648_p2" SOURCE="ExtendedKalmanFilter.cpp:149" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln149"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>extendedKalmanFilter</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>4.00</TargetClockPeriod>
+                    <ClockUncertainty>1.08</ClockUncertainty>
+                    <EstimatedClockPeriod>3.483</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>733</Best-caseLatency>
+                    <Average-caseLatency>733</Average-caseLatency>
+                    <Worst-caseLatency>733</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>2.932 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>2.932 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.932 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>734</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>ExtendedKalmanFilter.cpp:39</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>2</BRAM_18K>
+                    <AVAIL_BRAM>650</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>326</DSP>
+                    <AVAIL_DSP>600</AVAIL_DSP>
+                    <UTIL_DSP>54</UTIL_DSP>
+                    <FF>64384</FF>
+                    <AVAIL_FF>202800</AVAIL_FF>
+                    <UTIL_FF>31</UTIL_FF>
+                    <LUT>38078</LUT>
+                    <AVAIL_LUT>101400</AVAIL_LUT>
+                    <UTIL_LUT>37</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="4" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp2_U" SOURCE="ExtendedKalmanFilter.cpp:139" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp2"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U489" SOURCE="ExtendedKalmanFilter.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="z_pred"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U490" SOURCE="ExtendedKalmanFilter.cpp:26" STORAGESUBTYPE="" URAM="0" VARIABLE="z_pred_1"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U489" SOURCE="ExtendedKalmanFilter.cpp:27" STORAGESUBTYPE="" URAM="0" VARIABLE="add2_i"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U490" SOURCE="ExtendedKalmanFilter.cpp:28" STORAGESUBTYPE="" URAM="0" VARIABLE="add4_i"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsub" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dsub" PRAGMA="" RTLNAME="dsub_64ns_64ns_64_13_full_dsp_1_U491" SOURCE="ExtendedKalmanFilter.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="y"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dsub" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dsub" PRAGMA="" RTLNAME="dsub_64ns_64ns_64_13_full_dsp_1_U492" SOURCE="ExtendedKalmanFilter.cpp:81" STORAGESUBTYPE="" URAM="0" VARIABLE="y_1"/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_export flow="syn" vivado_clock="4"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="gps_measurement_data" index="0" direction="in" srcType="double*" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="gps_measurement_data_0" name="gps_measurement_data_0" usage="data" direction="in"/>
+                <hwRef type="port" interface="gps_measurement_data_1" name="gps_measurement_data_1" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="output_predict_data" index="1" direction="out" srcType="double*" srcSize="64">
+            <hwRefs>
+                <hwRef type="port" interface="output_predict_data_0" name="output_predict_data_0" usage="data" direction="out"/>
+                <hwRef type="port" interface="output_predict_data_0_ap_vld" name="output_predict_data_0_ap_vld" usage="control" direction="out"/>
+                <hwRef type="port" interface="output_predict_data_1" name="output_predict_data_1" usage="data" direction="out"/>
+                <hwRef type="port" interface="output_predict_data_1_ap_vld" name="output_predict_data_1_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_ctrl" type="ap_ctrl" busTypeName="acc_handshake" mode="slave">
+            <portMaps>
+                <portMap portMapName="ap_start">start</portMap>
+                <portMap portMapName="ap_done">done</portMap>
+                <portMap portMapName="ap_idle">idle</portMap>
+                <portMap portMapName="ap_ready">ready</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_done</port>
+                <port>ap_idle</port>
+                <port>ap_ready</port>
+                <port>ap_start</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="gps_measurement_data_0" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="gps_measurement_data_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>gps_measurement_data_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="gps_measurement_data"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="gps_measurement_data_1" type="data" busTypeName="data" protocol="ap_none" mode="slave" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="gps_measurement_data_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>gps_measurement_data_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="gps_measurement_data"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_predict_data_0" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="output_predict_data_0">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>output_predict_data_0</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="output_predict_data"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="output_predict_data_1" type="data" busTypeName="data" protocol="ap_vld" mode="master" dataWidth="64">
+            <portMaps>
+                <portMap portMapName="output_predict_data_1">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>output_predict_data_1</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="output_predict_data"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="Other Ports">
+                <table>
+                    <keys size="4">Port, Mode, Direction, Bitwidth</keys>
+                    <column name="gps_measurement_data_0">ap_none, in, 64</column>
+                    <column name="gps_measurement_data_1">ap_none, in, 64</column>
+                    <column name="output_predict_data_0">ap_vld, out, 64</column>
+                    <column name="output_predict_data_1">ap_vld, out, 64</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst">reset, ap_rst</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, ap_done ap_idle ap_ready ap_start</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="gps_measurement_data">in, double*</column>
+                    <column name="output_predict_data">out, double*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="3">Argument, HW Interface, HW Type</keys>
+                    <column name="gps_measurement_data">gps_measurement_data_0, port</column>
+                    <column name="gps_measurement_data">gps_measurement_data_1, port</column>
+                    <column name="output_predict_data">output_predict_data_0, port</column>
+                    <column name="output_predict_data">output_predict_data_0_ap_vld, port</column>
+                    <column name="output_predict_data">output_predict_data_1, port</column>
+                    <column name="output_predict_data">output_predict_data_1_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="array_partition" location="ExtendedKalmanFilter.cpp:40" status="valid" parentFunction="extendedkalmanfilter" variable="gps_measurement_data" isDirective="0" options="variable=gps_measurement_data type=complete"/>
+        <Pragma type="array_partition" location="ExtendedKalmanFilter.cpp:41" status="valid" parentFunction="extendedkalmanfilter" variable="output_predict_data" isDirective="0" options="variable=output_predict_data type=complete"/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:48" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options="FACTOR=2"/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:57" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:66" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:85" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options="FACTOR=2"/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:93" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options="FACTOR=2"/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:100" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:109" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:120" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options=""/>
+        <Pragma type="unroll" location="ExtendedKalmanFilter.cpp:129" status="valid" parentFunction="extendedkalmanfilter" variable="" isDirective="0" options="FACTOR=2"/>
+    </PragmaReport>
+    <AutoPragmaReport/>
+</profile>
+

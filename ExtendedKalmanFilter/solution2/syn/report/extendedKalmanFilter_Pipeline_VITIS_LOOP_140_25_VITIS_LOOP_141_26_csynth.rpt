@@ -1,0 +1,285 @@
+
+
+================================================================
+== Vitis HLS Report for 'extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26'
+================================================================
+* Date:           Sun Mar 17 14:02:21 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        ExtendedKalmanFilter
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k160t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  3.212 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       59|       59|  0.236 us|  0.236 us|   59|   59|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                       |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |               Loop Name               |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_140_25_VITIS_LOOP_141_26  |       57|       57|        43|          1|          1|    16|       yes|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      83|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       0|      68|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|      76|    -|
+|Register         |        -|    -|     878|     128|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|     878|     355|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      650|  600|  202800|  101400|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |          Instance         |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |sparsemux_9_2_64_1_1_U437  |sparsemux_9_2_64_1_1  |        0|   0|  0|  17|    0|
+    |sparsemux_9_2_64_1_1_U438  |sparsemux_9_2_64_1_1  |        0|   0|  0|  17|    0|
+    |sparsemux_9_2_64_1_1_U439  |sparsemux_9_2_64_1_1  |        0|   0|  0|  17|    0|
+    |sparsemux_9_2_64_1_1_U440  |sparsemux_9_2_64_1_1  |        0|   0|  0|  17|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |Total                      |                      |        0|   0|  0|  68|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |add_ln140_1_fu_184_p2     |         +|   0|  0|  13|           5|           1|
+    |add_ln140_fu_196_p2       |         +|   0|  0|  11|           3|           1|
+    |add_ln141_fu_280_p2       |         +|   0|  0|  11|           3|           1|
+    |add_ln142_fu_310_p2       |         +|   0|  0|  13|           4|           4|
+    |icmp_ln140_fu_178_p2      |      icmp|   0|  0|  14|           5|           6|
+    |icmp_ln141_fu_202_p2      |      icmp|   0|  0|  13|           3|           4|
+    |select_ln140_1_fu_216_p3  |    select|   0|  0|   3|           1|           3|
+    |select_ln140_fu_208_p3    |    select|   0|  0|   3|           1|           1|
+    |ap_enable_pp0             |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0|  83|          26|          23|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------+----+-----------+-----+-----------+
+    |                 Name                 | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                           |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1               |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_load               |   9|          2|    3|          6|
+    |ap_sig_allocacmp_indvar_flatten_load  |   9|          2|    5|         10|
+    |ap_sig_allocacmp_j_load               |  13|          3|    3|          9|
+    |i_fu_74                               |   9|          2|    3|          6|
+    |indvar_flatten_fu_78                  |   9|          2|    5|         10|
+    |j_fu_70                               |   9|          2|    3|          6|
+    +--------------------------------------+----+-----------+-----+-----------+
+    |Total                                 |  76|         17|   24|         51|
+    +--------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |add357_1_reg_468                   |  64|   0|   64|          0|
+    |add7_reg_458                       |  64|   0|   64|          0|
+    |add_ln141_reg_433                  |   3|   0|    3|          0|
+    |add_ln142_reg_438                  |   4|   0|    4|          0|
+    |ap_CS_fsm                          |   1|   0|    1|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter10           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter11           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter12           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter13           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter14           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter15           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter16           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter17           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter18           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter19           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter20           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter21           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter22           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter23           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter24           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter25           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter26           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter27           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter28           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter29           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter3            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter30           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter31           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter32           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter33           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter34           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter35           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter36           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter37           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter38           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter39           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter4            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter40           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter41           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter42           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter5            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter6            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter7            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter8            |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter9            |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter10_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter11_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter12_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter13_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter14_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter15_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter16_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter17_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter18_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter19_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter20_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter21_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter22_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter23_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter24_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter25_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter26_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter27_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter28_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter29_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter2_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter30_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter31_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter32_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter33_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter34_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter35_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter36_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter37_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter38_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter39_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter3_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter40_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter41_reg  |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter4_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter5_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter6_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter7_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter8_reg   |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter9_reg   |   1|   0|    1|          0|
+    |i_fu_74                            |   3|   0|    3|          0|
+    |indvar_flatten_fu_78               |   5|   0|    5|          0|
+    |j_fu_70                            |   3|   0|    3|          0|
+    |mul352_1_reg_463                   |  64|   0|   64|          0|
+    |mul5_reg_453                       |  64|   0|   64|          0|
+    |select_ln140_reg_407               |   3|   0|    3|          0|
+    |tmp_19_reg_423                     |  64|   0|   64|          0|
+    |tmp_20_reg_428                     |  64|   0|   64|          0|
+    |tmp_21_reg_443                     |  64|   0|   64|          0|
+    |tmp_22_reg_448                     |  64|   0|   64|          0|
+    |trunc_ln141_reg_418                |   2|   0|    2|          0|
+    |trunc_ln142_reg_412                |   2|   0|    2|          0|
+    |add_ln142_reg_438                  |  64|  32|    4|          0|
+    |select_ln140_reg_407               |  64|  32|    3|          0|
+    |trunc_ln141_reg_418                |  64|  32|    2|          0|
+    |trunc_ln142_reg_412                |  64|  32|    2|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 878| 128|  633|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-------------------------------------------------------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |                           Source Object                           |    C Type    |
++-------------------------+-----+-----+------------+-------------------------------------------------------------------+--------------+
+|ap_clk                   |   in|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|ap_start                 |   in|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2006_p_din0       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2006_p_din1       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2006_p_opcode     |  out|    2|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2006_p_dout0      |   in|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2006_p_ce         |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2010_p_din0       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2010_p_din1       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2010_p_opcode     |  out|    2|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2010_p_dout0      |   in|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2010_p_ce         |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2022_p_din0       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2022_p_din1       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2022_p_dout0      |   in|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2022_p_ce         |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2026_p_din0       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2026_p_din1       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2026_p_dout0      |   in|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|grp_fu_2026_p_ce         |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26|  return value|
+|temp2_address0           |  out|    4|   ap_memory|                                                              temp2|         array|
+|temp2_ce0                |  out|    1|   ap_memory|                                                              temp2|         array|
+|temp2_we0                |  out|    1|   ap_memory|                                                              temp2|         array|
+|temp2_d0                 |  out|   64|   ap_memory|                                                              temp2|         array|
+|mux_case_0243446_reload  |   in|   64|     ap_none|                                            mux_case_0243446_reload|        scalar|
+|mux_case_1245449_reload  |   in|   64|     ap_none|                                            mux_case_1245449_reload|        scalar|
+|mux_case_2247452_reload  |   in|   64|     ap_none|                                            mux_case_2247452_reload|        scalar|
+|mux_case_3249455_reload  |   in|   64|     ap_none|                                            mux_case_3249455_reload|        scalar|
+|mux_case_0251458_reload  |   in|   64|     ap_none|                                            mux_case_0251458_reload|        scalar|
+|mux_case_1253461_reload  |   in|   64|     ap_none|                                            mux_case_1253461_reload|        scalar|
+|mux_case_2255464_reload  |   in|   64|     ap_none|                                            mux_case_2255464_reload|        scalar|
+|mux_case_3257467_reload  |   in|   64|     ap_none|                                            mux_case_3257467_reload|        scalar|
++-------------------------+-----+-----+------------+-------------------------------------------------------------------+--------------+
+

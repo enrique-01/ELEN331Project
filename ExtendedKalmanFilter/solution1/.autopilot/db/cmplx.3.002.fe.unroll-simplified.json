@@ -1,0 +1,51 @@
+{
+  "0": {
+    "basicblocks": 51,
+    "calls": "1 2",
+    "file": "ExtendedKalmanFilter.cpp",
+    "fileloc": 39,
+    "instructions": 273,
+    "loads": {
+      "G": 11,
+      "L": 8,
+      "T": 4
+    },
+    "name": "extendedKalmanFilter",
+    "stores": {
+      "G": 4,
+      "L": 12
+    },
+    "total_instructions": 295
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ExtendedKalmanFilter.cpp",
+    "fileloc": 23,
+    "instructions": 16,
+    "loads": {
+      "G": 4,
+      "L": 2
+    },
+    "name": "stateTransition",
+    "stores": {
+      "G": 4
+    },
+    "total_instructions": 16
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ExtendedKalmanFilter.cpp",
+    "fileloc": 32,
+    "instructions": 6,
+    "loads": {
+      "G": 2
+    },
+    "name": "measurementFunction",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 6
+  }
+}

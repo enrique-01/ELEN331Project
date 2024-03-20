@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../tb_ExtendedKalmanFilter.cpp in debug mode
+csim.mk:79: recipe for target 'obj/tb_ExtendedKalmanFilter.o' failed
+../../../../tb_ExtendedKalmanFilter.cpp: In function 'int main()':
+../../../../tb_ExtendedKalmanFilter.cpp:66:71: error: 'extendedKalmanFilter' was not declared in this scope
+         extendedKalmanFilter(gps_measurement_data, output_predict_data);
+                                                                       ^
+make: *** [obj/tb_ExtendedKalmanFilter.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

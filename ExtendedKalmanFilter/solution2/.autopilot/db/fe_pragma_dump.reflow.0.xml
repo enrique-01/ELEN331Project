@@ -1,0 +1,13 @@
+<pragmas>
+<pragma file="ExtendedKalmanFilter.cpp" line="129" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="2" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="120" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="109" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="100" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="93" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="2" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="85" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="2" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="66" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="57" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="-1" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="48" pragmaType="unroll" parentfunction="extendedKalmanFilter" factor="2" skip_exit_check="0"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="40" pragmaType="array_partition" parentfunction="extendedKalmanFilter" dim="1" factor="0" mode="complete" dynamic="0" variable="gps_measurement_data"/>
+<pragma file="ExtendedKalmanFilter.cpp" line="41" pragmaType="array_partition" parentfunction="extendedKalmanFilter" dim="1" factor="0" mode="complete" dynamic="0" variable="output_predict_data"/>
+</pragmas>

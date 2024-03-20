@@ -1,0 +1,434 @@
+
+*** Running vivado
+    with args -log bd_0_hls_inst_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_hls_inst_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 566.328 ; gain = 182.727
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7k160tfbg676-2 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4512
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1436.984 ; gain = 439.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_A_ROM_AUTO_1R' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_A_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './extendedKalmanFilter_A_ROM_AUTO_1R.dat' is read successfully [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_A_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_A_ROM_AUTO_1R' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_A_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_P_RAM_AUTO_1R1W' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_P_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './extendedKalmanFilter_P_RAM_AUTO_1R1W.dat' is read successfully [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_P_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_P_RAM_AUTO_1R1W' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_P_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_H_ROM_AUTO_1R' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_H_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './extendedKalmanFilter_H_ROM_AUTO_1R.dat' is read successfully [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_H_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_H_ROM_AUTO_1R' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_H_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_tempP_RAM_AUTO_1R1W' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_tempP_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_tempP_RAM_AUTO_1R1W' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_tempP_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_temp_RAM_AUTO_1R1W' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_temp_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_temp_RAM_AUTO_1R1W' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_temp_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_K_RAM_AUTO_1R1W' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_K_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_K_RAM_AUTO_1R1W' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_K_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/ip/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/ip/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/ip/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/ip/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/ip/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/ip/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/ip/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/ip/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/daae/hdl/verilog/extendedKalmanFilter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized85 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[10] in module carry_chain__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized189 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized189 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized189 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized187 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized187 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized187 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized185 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized185 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized185 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized183 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized183 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized183 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized183 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized183 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized181 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized181 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized181 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized181 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized181 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized179 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized179 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized179 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized179 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized179 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized177 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized177 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized177 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized175 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized175 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized175 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized173 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized173 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized173 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized171 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized171 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized171 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized169 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized169 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized169 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized107 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized107 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized107 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized167 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized167 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized167 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized31 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized31 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:42 . Memory (MB): peak = 1744.469 ; gain = 747.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1744.469 ; gain = 747.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:42 . Memory (MB): peak = 1744.469 ; gain = 747.246
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1744.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7311 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/extendedKalmanFilter_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/extendedKalmanFilter_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1915.480 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 139 instances were transformed.
+  FDE => FDRE: 139 instances
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:02 . Memory (MB): peak = 1956.062 ; gain = 40.582
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:41 ; elapsed = 00:01:11 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:41 ; elapsed = 00:01:11 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:11 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:51 ; elapsed = 00:01:27 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1:/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1:/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1:/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1:/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized14) to 'inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized14) to 'inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized14) to 'inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:02:07 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:02:20 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:02:26 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:39 ; elapsed = 00:02:36 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:44 ; elapsed = 00:02:44 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:44 ; elapsed = 00:02:45 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:48 ; elapsed = 00:02:49 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:48 ; elapsed = 00:02:49 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:48 ; elapsed = 00:02:50 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:48 ; elapsed = 00:02:50 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                          | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper__parameterized0_1142 | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_1143                 | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_1010 | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_958  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_959                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_826  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_776  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_777                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_644  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0      | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper                      | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_515  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_47   | (A'*B')'              | 17     | 17     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_48   | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_49   | (PCIN+(A''*B'')')'    | 17     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_50   | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_51   | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_52   | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_53   | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_54   | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_55  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_56  | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_32   | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2      | (A'*B')'              | 17     | 17     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3      | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4      | (PCIN+(A''*B'')')'    | 17     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5      | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6      | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7      | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8      | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9      | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10     | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11     | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1      | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
++-------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    59|
+|2     |DSP48E1  |    34|
+|12    |LUT1     |    60|
+|13    |LUT2     |   598|
+|14    |LUT3     |  4188|
+|15    |LUT4     |   729|
+|16    |LUT5     |   992|
+|17    |LUT6     |  1624|
+|18    |MUXCY    |  3631|
+|19    |MUXF7    |    40|
+|20    |MUXF8    |     4|
+|21    |RAM16X1D |    64|
+|22    |RAM16X1S |   128|
+|23    |RAMB36E1 |     3|
+|25    |SRL16E   |   365|
+|26    |SRLC32E  |    90|
+|27    |XORCY    |  3303|
+|28    |FDE      |   139|
+|29    |FDRE     | 13739|
+|30    |FDSE     |    21|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:48 ; elapsed = 00:02:50 . Memory (MB): peak = 1956.062 ; gain = 958.840
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 85 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:13 ; elapsed = 00:02:30 . Memory (MB): peak = 1956.062 ; gain = 747.246
+Synthesis Optimization Complete : Time (s): cpu = 00:01:49 ; elapsed = 00:02:50 . Memory (MB): peak = 1956.062 ; gain = 958.840
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1956.062 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7405 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1956.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1309 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 978 instances
+  FDE => FDRE: 139 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 64 instances
+  RAM16X1S => RAM32X1S (RAMS32): 128 instances
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: f8bc80e6
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:02 ; elapsed = 00:03:11 . Memory (MB): peak = 1956.062 ; gain = 1377.637
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.072 . Memory (MB): peak = 1956.062 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1956.062 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1956.062 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 8c1f18b8d020a591
+INFO: [Coretcl 2-1174] Renamed 1392 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1956.062 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1956.062 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 17 15:45:18 2024...

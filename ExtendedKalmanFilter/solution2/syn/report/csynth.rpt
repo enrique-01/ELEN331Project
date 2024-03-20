@@ -1,0 +1,233 @@
+
+
+================================================================
+== Synthesis Summary Report of 'extendedKalmanFilter'
+================================================================
++ General Information: 
+    * Date:           Sun Mar 17 14:02:24 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        ExtendedKalmanFilter
+    * Solution:       solution2 (Vivado IP Flow Target)
+    * Product family: kintex7
+    * Target device:  xc7k160t-fbg676-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +----------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+-----------+-------------+-------------+-----+
+    |                                Modules                               |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |         |           |             |             |     |
+    |                                & Loops                               |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   |    DSP    |      FF     |     LUT     | URAM|
+    +----------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+-----------+-------------+-------------+-----+
+    |+ extendedKalmanFilter                                                |  Timing|  -0.56|      733|  2.932e+03|         -|      734|     -|        no|  2 (~0%)|  326 (54%)|  64384 (31%)|  38078 (37%)|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4                      |       -|   0.12|       59|    236.000|         -|       59|     -|        no|        -|          -|   1139 (~0%)|    194 (~0%)|    -|
+    |  o VITIS_LOOP_58_4                                                   |       -|   2.92|       57|    228.000|        55|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41                     |       -|   0.12|       72|    288.000|         -|       72|     -|        no|        -|          -|   1165 (~0%)|    194 (~0%)|    -|
+    |  o VITIS_LOOP_58_4                                                   |       -|   2.92|       70|    280.000|        68|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42                     |       -|   0.12|       72|    288.000|         -|       72|     -|        no|        -|          -|   1165 (~0%)|    194 (~0%)|    -|
+    |  o VITIS_LOOP_58_4                                                   |       -|   2.92|       70|    280.000|        68|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43                     |       -|   0.12|       72|    288.000|         -|       72|     -|        no|        -|          -|   1165 (~0%)|    194 (~0%)|    -|
+    |  o VITIS_LOOP_58_4                                                   |       -|   2.92|       70|    280.000|        68|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12                     |       -|   0.40|        4|     16.000|         -|        4|     -|        no|        -|          -|     68 (~0%)|    184 (~0%)|    -|
+    |  o VITIS_LOOP_94_12                                                  |       -|   2.92|        2|      8.000|         1|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127                    |       -|   0.40|        4|     16.000|         -|        4|     -|        no|        -|          -|     68 (~0%)|    184 (~0%)|    -|
+    |  o VITIS_LOOP_94_12                                                  |       -|   2.92|        2|      8.000|         1|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7                      |       -|   0.12|       73|    292.000|         -|       73|     -|        no|        -|          -|   1295 (~0%)|    230 (~0%)|    -|
+    |  o VITIS_LOOP_67_7                                                   |       -|   2.92|       71|    284.000|        69|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74                     |       -|   0.12|       73|    292.000|         -|       73|     -|        no|        -|          -|   1295 (~0%)|    230 (~0%)|    -|
+    |  o VITIS_LOOP_67_7                                                   |       -|   2.92|       71|    284.000|        69|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75                     |       -|   0.12|       73|    292.000|         -|       73|     -|        no|        -|          -|   1295 (~0%)|    230 (~0%)|    -|
+    |  o VITIS_LOOP_67_7                                                   |       -|   2.92|       71|    284.000|        69|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76                     |       -|   0.12|       73|    292.000|         -|       73|     -|        no|        -|          -|   1295 (~0%)|    230 (~0%)|    -|
+    |  o VITIS_LOOP_67_7                                                   |       -|   2.92|       71|    284.000|        69|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14                    |       -|   0.12|       59|    236.000|         -|       59|     -|        no|        -|          -|   1139 (~0%)|    194 (~0%)|    -|
+    |  o VITIS_LOOP_101_14                                                 |       -|   2.92|       57|    228.000|        55|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148                   |       -|   0.12|       72|    288.000|         -|       72|     -|        no|        -|          -|   1165 (~0%)|    194 (~0%)|    -|
+    |  o VITIS_LOOP_101_14                                                 |       -|   2.92|       70|    280.000|        68|        1|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20                    |       -|   0.12|       71|    284.000|         -|       71|     -|        no|        -|    56 (9%)|    7105 (3%)|    4759 (4%)|    -|
+    |  o VITIS_LOOP_121_20                                                 |       -|   2.92|       69|    276.000|        69|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010                  |       -|   0.12|       71|    284.000|         -|       71|     -|        no|        -|          -|    929 (~0%)|    375 (~0%)|    -|
+    |  o VITIS_LOOP_121_20                                                 |       -|   2.92|       69|    276.000|        69|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011                  |       -|   0.12|       71|    284.000|         -|       71|     -|        no|        -|          -|    929 (~0%)|    375 (~0%)|    -|
+    |  o VITIS_LOOP_121_20                                                 |       -|   2.92|       69|    276.000|        69|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012                  |       -|   0.12|       71|    284.000|         -|       71|     -|        no|        -|    34 (5%)|    5975 (2%)|    4167 (4%)|    -|
+    |  o VITIS_LOOP_121_20                                                 |       -|   2.92|       69|    276.000|        69|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17                    |       -|   0.12|       71|    284.000|         -|       71|     -|        no|        -|          -|    865 (~0%)|    320 (~0%)|    -|
+    |  o VITIS_LOOP_110_17                                                 |       -|   2.92|       69|    276.000|        69|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179                   |       -|   0.12|       71|    284.000|         -|       71|     -|        no|        -|          -|    865 (~0%)|    320 (~0%)|    -|
+    |  o VITIS_LOOP_110_17                                                 |       -|   2.92|       69|    276.000|        69|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22                    |       -|   0.11|       63|    252.000|         -|       63|     -|        no|        -|          -|   1278 (~0%)|    902 (~0%)|    -|
+    |  o VITIS_LOOP_128_22                                                 |       -|   2.92|       61|    244.000|        61|        1|     2|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24                    |       -|   0.12|      125|    500.000|         -|      125|     -|        no|        -|          -|    678 (~0%)|    394 (~0%)|    -|
+    |  o VITIS_LOOP_135_24                                                 |      II|   2.92|      123|    492.000|        43|       27|     4|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26  |  Timing|  -0.29|       59|    236.000|         -|       59|     -|        no|        -|          -|    878 (~0%)|    355 (~0%)|    -|
+    |  o VITIS_LOOP_140_25_VITIS_LOOP_141_26                               |       -|   2.92|       57|    228.000|        43|        1|    16|       yes|        -|          -|            -|            -|    -|
+    | + extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29  |  Timing|  -0.56|      228|    912.000|         -|      228|     -|        no|        -|          -|   1268 (~0%)|    607 (~0%)|    -|
+    |  o VITIS_LOOP_148_28_VITIS_LOOP_149_29                               |      II|   2.92|      226|    904.000|        17|       14|    16|       yes|        -|          -|            -|            -|    -|
+    +----------------------------------------------------------------------+--------+-------+---------+-----------+----------+---------+------+----------+---------+-----------+-------------+-------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------------------+---------+-----------+----------+
+| Port                   | Mode    | Direction | Bitwidth |
++------------------------+---------+-----------+----------+
+| gps_measurement_data_0 | ap_none | in        | 64       |
+| gps_measurement_data_1 | ap_none | in        | 64       |
+| output_predict_data_0  | ap_vld  | out       | 64       |
+| output_predict_data_1  | ap_vld  | out       | 64       |
++------------------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------------+-----------+----------+
+| Argument             | Direction | Datatype |
++----------------------+-----------+----------+
+| gps_measurement_data | in        | double*  |
+| output_predict_data  | out       | double*  |
++----------------------+-----------+----------+
+
+* SW-to-HW Mapping
++----------------------+------------------------------+---------+
+| Argument             | HW Interface                 | HW Type |
++----------------------+------------------------------+---------+
+| gps_measurement_data | gps_measurement_data_0       | port    |
+| gps_measurement_data | gps_measurement_data_1       | port    |
+| output_predict_data  | output_predict_data_0        | port    |
+| output_predict_data  | output_predict_data_0_ap_vld | port    |
+| output_predict_data  | output_predict_data_1        | port    |
+| output_predict_data  | output_predict_data_1_ap_vld | port    |
++----------------------+------------------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+| Name                                                                 | DSP | Pragma | Variable    | Op   | Impl    | Latency |
++----------------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+| + extendedKalmanFilter                                               | 326 |        |             |      |         |         |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U489                               | 3   |        | z_pred      | dadd | fulldsp | 12      |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U490                               | 3   |        | z_pred_1    | dadd | fulldsp | 12      |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U489                               | 3   |        | add2_i      | dadd | fulldsp | 12      |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U490                               | 3   |        | add4_i      | dadd | fulldsp | 12      |
+|   dsub_64ns_64ns_64_13_full_dsp_1_U491                               | 3   |        | y           | dsub | fulldsp | 12      |
+|   dsub_64ns_64ns_64_13_full_dsp_1_U492                               | 3   |        | y_1         | dsub | fulldsp | 12      |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4                     | 0   |        |             |      |         |         |
+|    add_ln58_fu_272_p2                                                |     |        | add_ln58    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41                    | 0   |        |             |      |         |         |
+|    add_ln58_fu_272_p2                                                |     |        | add_ln58    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42                    | 0   |        |             |      |         |         |
+|    add_ln58_fu_272_p2                                                |     |        | add_ln58    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43                    | 0   |        |             |      |         |         |
+|    add_ln58_fu_272_p2                                                |     |        | add_ln58    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12                    | 0   |        |             |      |         |         |
+|    add_ln94_fu_61_p2                                                 |     |        | add_ln94    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127                   | 0   |        |             |      |         |         |
+|    add_ln94_fu_61_p2                                                 |     |        | add_ln94    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7                     | 0   |        |             |      |         |         |
+|    add_ln67_fu_235_p2                                                |     |        | add_ln67    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74                    | 0   |        |             |      |         |         |
+|    add_ln67_fu_235_p2                                                |     |        | add_ln67    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75                    | 0   |        |             |      |         |         |
+|    add_ln67_fu_235_p2                                                |     |        | add_ln67    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76                    | 0   |        |             |      |         |         |
+|    add_ln67_fu_235_p2                                                |     |        | add_ln67    | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14                   | 0   |        |             |      |         |         |
+|    add_ln101_fu_272_p2                                               |     |        | add_ln101   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148                  | 0   |        |             |      |         |         |
+|    add_ln101_fu_272_p2                                               |     |        | add_ln101   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20                   | 56  |        |             |      |         |         |
+|    add_ln121_fu_143_p2                                               |     |        | add_ln121   | add  | fabric  | 0       |
+|    dmul_64ns_64ns_64_15_max_dsp_1_U335                               | 11  |        | mul2        | dmul | maxdsp  | 14      |
+|    dadd_64ns_64ns_64_13_full_dsp_1_U331                              | 3   |        | add4        | dadd | fulldsp | 12      |
+|    dmul_64ns_64ns_64_15_max_dsp_1_U336                               | 11  |        | mul258_s    | dmul | maxdsp  | 14      |
+|    dadd_64ns_64ns_64_13_full_dsp_1_U332                              | 3   |        | add263_s    | dadd | fulldsp | 12      |
+|    dmul_64ns_64ns_64_15_max_dsp_1_U337                               | 11  |        | mul258_4    | dmul | maxdsp  | 14      |
+|    dadd_64ns_64ns_64_13_full_dsp_1_U333                              | 3   |        | add263_4    | dadd | fulldsp | 12      |
+|    dmul_64ns_64ns_64_15_max_dsp_1_U338                               | 11  |        | mul258_5    | dmul | maxdsp  | 14      |
+|    dadd_64ns_64ns_64_13_full_dsp_1_U334                              | 3   |        | temp1_0     | dadd | fulldsp | 12      |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010                 | 0   |        |             |      |         |         |
+|    add_ln121_fu_143_p2                                               |     |        | add_ln121   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011                 | 0   |        |             |      |         |         |
+|    add_ln121_fu_143_p2                                               |     |        | add_ln121   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012                 | 34  |        |             |      |         |         |
+|    add_ln121_fu_143_p2                                               |     |        | add_ln121   | add  | fabric  | 0       |
+|    dadd_64ns_64ns_64_13_full_dsp_1_U373                              | 3   |        | add263_3    | dadd | fulldsp | 12      |
+|    dadd_64ns_64ns_64_13_full_dsp_1_U374                              | 3   |        | add263_3_1  | dadd | fulldsp | 12      |
+|    dmul_64ns_64ns_64_15_max_dsp_1_U379                               | 11  |        | mul258_3_2  | dmul | maxdsp  | 14      |
+|    dadd_64ns_64ns_64_13_full_dsp_1_U375                              | 3   |        | add263_3_2  | dadd | fulldsp | 12      |
+|    dmul_64ns_64ns_64_15_max_dsp_1_U380                               | 11  |        | mul258_3_3  | dmul | maxdsp  | 14      |
+|    dadd_64ns_64ns_64_13_full_dsp_1_U376                              | 3   |        | temp1_0     | dadd | fulldsp | 12      |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17                   | 0   |        |             |      |         |         |
+|    add_ln110_fu_143_p2                                               |     |        | add_ln110   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179                  | 0   |        |             |      |         |         |
+|    add_ln110_fu_143_p2                                               |     |        | add_ln110   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22                   | 0   |        |             |      |         |         |
+|    ddiv_64ns_64ns_64_59_no_dsp_1_U387                                |     |        | div         | ddiv | fabric  | 58      |
+|    ddiv_64ns_64ns_64_59_no_dsp_1_U388                                |     |        | div_s       | ddiv | fabric  | 58      |
+|    ddiv_64ns_64ns_64_59_no_dsp_1_U389                                |     |        | div_1       | ddiv | fabric  | 58      |
+|    ddiv_64ns_64ns_64_59_no_dsp_1_U390                                |     |        | div_1_1     | ddiv | fabric  | 58      |
+|    add_ln128_fu_302_p2                                               |     |        | add_ln128   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24                   | 0   |        |             |      |         |         |
+|    add_ln135_fu_227_p2                                               |     |        | add_ln135   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26 | 0   |        |             |      |         |         |
+|    add_ln140_1_fu_184_p2                                             |     |        | add_ln140_1 | add  | fabric  | 0       |
+|    add_ln140_fu_196_p2                                               |     |        | add_ln140   | add  | fabric  | 0       |
+|    add_ln142_fu_310_p2                                               |     |        | add_ln142   | add  | fabric  | 0       |
+|    add_ln141_fu_280_p2                                               |     |        | add_ln141   | add  | fabric  | 0       |
+|  + extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29 | 0   |        |             |      |         |         |
+|    add_ln148_1_fu_407_p2                                             |     |        | add_ln148_1 | add  | fabric  | 0       |
+|    add_ln148_fu_419_p2                                               |     |        | add_ln148   | add  | fabric  | 0       |
+|    add_ln150_fu_463_p2                                               |     |        | add_ln150   | add  | fabric  | 0       |
+|    add_ln149_fu_648_p2                                               |     |        | add_ln149   | add  | fabric  | 0       |
++----------------------------------------------------------------------+-----+--------+-------------+------+---------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++------------------------+--------------+------+------+------+--------+----------+------+---------+------------------+
+| Name                   | Usage        | Type | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                        |              |      |      |      |        |          |      |         | Banks            |
++------------------------+--------------+------+------+------+--------+----------+------+---------+------------------+
+| + extendedKalmanFilter |              |      | 2    | 0    |        |          |      |         |                  |
+|   temp2_U              | ram_1p array |      | 4    |      |        | temp2    | auto | 1       | 64, 16, 1        |
++------------------------+--------------+------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+---------------------------------------------+---------------------------------------------------------------------------+
+| Type            | Options                                     | Location                                                                  |
++-----------------+---------------------------------------------+---------------------------------------------------------------------------+
+| array_partition | variable=gps_measurement_data type=complete | ExtendedKalmanFilter.cpp:40 in extendedkalmanfilter, gps_measurement_data |
+| array_partition | variable=output_predict_data type=complete  | ExtendedKalmanFilter.cpp:41 in extendedkalmanfilter, output_predict_data  |
+| unroll          | FACTOR=2                                    | ExtendedKalmanFilter.cpp:48 in extendedkalmanfilter                       |
+| unroll          |                                             | ExtendedKalmanFilter.cpp:57 in extendedkalmanfilter                       |
+| unroll          |                                             | ExtendedKalmanFilter.cpp:66 in extendedkalmanfilter                       |
+| unroll          | FACTOR=2                                    | ExtendedKalmanFilter.cpp:85 in extendedkalmanfilter                       |
+| unroll          | FACTOR=2                                    | ExtendedKalmanFilter.cpp:93 in extendedkalmanfilter                       |
+| unroll          |                                             | ExtendedKalmanFilter.cpp:100 in extendedkalmanfilter                      |
+| unroll          |                                             | ExtendedKalmanFilter.cpp:109 in extendedkalmanfilter                      |
+| unroll          |                                             | ExtendedKalmanFilter.cpp:120 in extendedkalmanfilter                      |
+| unroll          | FACTOR=2                                    | ExtendedKalmanFilter.cpp:129 in extendedkalmanfilter                      |
++-----------------+---------------------------------------------+---------------------------------------------------------------------------+
+
+

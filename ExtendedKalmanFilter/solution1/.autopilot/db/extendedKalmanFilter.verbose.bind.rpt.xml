@@ -1,0 +1,70 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'extendedKalmanFilter'" level="0">
+<item name = "Date">Sun Mar 17 15:39:12 2024
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">ExtendedKalmanFilter</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">kintex7</item>
+<item name = "Target device">xc7k160t-fbg676-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00 ns, 3.341 ns, 1.08 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">8619, 8619, 34.476 us, 34.476 us, 8620, 8620, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- unroll_line55">2040, 2040, 510, -, -, 4, no</column>
+<column name=" + VITIS_LOOP_56_2">508, 508, 127, -, -, 4, no</column>
+<column name="  ++ VITIS_LOOP_58_3">124, 124, 31, -, -, 4, no</column>
+<column name="- unroll_line63">2040, 2040, 510, -, -, 4, no</column>
+<column name=" + VITIS_LOOP_64_4">508, 508, 127, -, -, 4, no</column>
+<column name="  ++ VITIS_LOOP_66_5">124, 124, 31, -, -, 4, no</column>
+<column name="- unroll_line88">8, 8, 4, -, -, 2, no</column>
+<column name=" + VITIS_LOOP_89_7">2, 2, 1, -, -, 2, no</column>
+<column name="- unroll_line94">1012, 1012, 506, -, -, 2, no</column>
+<column name=" + VITIS_LOOP_95_8">504, 504, 126, -, -, 4, no</column>
+<column name="  ++ VITIS_LOOP_97_9">124, 124, 31, -, -, 4, no</column>
+<column name="- unroll_line102">492, 492, 246, -, -, 2, no</column>
+<column name=" + VITIS_LOOP_103_10">244, 244, 122, -, -, 2, no</column>
+<column name="  ++ VITIS_LOOP_105_11">120, 120, 30, -, -, 4, no</column>
+<column name="- unroll_line112">1016, 1016, 254, -, -, 4, no</column>
+<column name=" + VITIS_LOOP_113_12">252, 252, 126, -, -, 2, no</column>
+<column name="  ++ VITIS_LOOP_115_13">124, 124, 31, -, -, 4, no</column>
+<column name="- unroll_line120">504, 504, 126, -, -, 4, no</column>
+<column name=" + VITIS_LOOP_121_14">124, 124, 62, -, -, 2, no</column>
+<column name="- unroll_line126">176, 176, 44, -, -, 4, no</column>
+<column name="- unroll_line131">1016, 1016, 254, -, -, 4, no</column>
+<column name=" + VITIS_LOOP_132_15">252, 252, 63, -, -, 4, no</column>
+<column name="  ++ VITIS_LOOP_134_16">60, 60, 30, -, -, 2, no</column>
+<column name="- unroll_line139">280, 280, 70, -, -, 4, no</column>
+<column name=" + VITIS_LOOP_140_17">68, 68, 17, -, -, 4, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

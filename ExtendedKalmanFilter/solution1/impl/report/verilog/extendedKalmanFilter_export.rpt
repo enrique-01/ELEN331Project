@@ -1,0 +1,24 @@
+
+
+Implementation tool: Xilinx Vivado v.2023.2
+Project:             ExtendedKalmanFilter
+Solution:            solution1
+Device target:       xc7k160t-fbg676-2
+Report date:         Sun Mar 17 15:51:33 -0700 2024
+
+#=== Post-Implementation Resource usage ===
+SLICE:         2861
+LUT:           7720
+FF:           13787
+DSP:             34
+BRAM:             6
+URAM:             0
+LATCH:            0
+SRL:            317
+CLB:              0
+
+#=== Final timing ===
+CP required:                     4.000
+CP achieved post-synthesis:      3.052
+CP achieved post-implementation: 3.347
+Timing met

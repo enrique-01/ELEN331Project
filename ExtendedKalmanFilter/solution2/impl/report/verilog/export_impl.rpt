@@ -1,0 +1,336 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Sun Mar 17 14:44:03 -0700 2024
+    * Version:         2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:         ExtendedKalmanFilter
+    * Solution:        solution2 (Vivado IP Flow Target)
+    * Product family:  kintex7
+    * Target device:   xc7k160t-fbg676-2
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  4 ns
+    * C-Synthesis target clock:    4 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       none
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              43467
+FF:               73130
+DSP:              326
+BRAM:             2
+URAM:             0
+SRL:              2074
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 4.000       |
+| Post-Synthesis | 3.052       |
+| Post-Route     | 3.821       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                                                               | LUT   | FF    | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                                                               | 43467 | 73130 | 326 | 2    |      |     |        |      |         |          |        |
+|   (inst)                                                                           | 1     | 2840  |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U489                                             | 831   | 1000  | 3   |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U490                                             | 830   | 991   | 3   |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U493                                             | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U493)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U494                                             | 623   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U494)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U495                                             | 626   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U495)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U496                                             | 624   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U496)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U501                                             | 627   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U501)                                         | 1     | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U502                                             | 626   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U502)                                         | 2     | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U503                                             | 626   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U503)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U507                                             | 637   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U507)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U508                                             | 637   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U508)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U509                                             | 637   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U509)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U510                                             | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U510)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U514                                             | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U514)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U515                                             | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U515)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U516                                             | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U516)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U517                                             | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     (dadd_64ns_64ns_64_13_full_dsp_1_U517)                                         |       | 128   |     |      |      |     |        |      |         |          |        |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U500                                         | 1141  | 928   | 3   |      |      |     |        |      |         |          |        |
+|     (dadddsub_64ns_64ns_64_13_full_dsp_1_U500)                                     | 2     | 129   |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U497                                              | 125   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U497)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U498                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U498)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U499                                              | 126   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U499)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U504                                              | 172   | 553   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U504)                                          | 1     | 128   |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U505                                              | 128   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U505)                                          | 1     | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U506                                              | 128   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U506)                                          | 1     | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U511                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U511)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U512                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U512)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U513                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U513)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U518                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U518)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U519                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U519)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U520                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U520)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U521                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U521)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U522                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U522)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U523                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U523)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U524                                              | 127   | 401   | 11  |      |      |     |        |      |         |          |        |
+|     (dmul_64ns_64ns_64_15_max_dsp_1_U524)                                          |       | 65    |     |      |      |     |        |      |         |          |        |
+|   dsub_64ns_64ns_64_13_full_dsp_1_U491                                             | 672   | 991   | 3   |      |      |     |        |      |         |          |        |
+|   dsub_64ns_64ns_64_13_full_dsp_1_U492                                             | 673   | 997   | 3   |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610                      | 375   | 595   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610)                  | 175   | 593   |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586                       | 561   | 595   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586)                   | 334   | 593   |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684                      | 208   | 203   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684)                  | 149   | 201   |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674                       | 75    | 330   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674)                   | 43    | 328   |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644                     | 16    | 267   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644)                 | 11    | 265   |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654                     | 104   | 246   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654)                 | 99    | 244   |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664                     | 2705  | 4896  | 34  |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664)                 | 13    | 393   |     |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_13_full_dsp_1_U373                                           | 580   | 792   | 3   |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_13_full_dsp_1_U374                                           | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_13_full_dsp_1_U375                                           | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_13_full_dsp_1_U376                                           | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     dmul_64ns_64ns_64_15_max_dsp_1_U379                                            | 116   | 464   | 11  |      |      |     |        |      |         |          |        |
+|     dmul_64ns_64ns_64_15_max_dsp_1_U380                                            | 116   | 464   | 11  |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 5     | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634                       | 2952  | 5825  | 56  |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634)                   | 11    | 393   |     |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_13_full_dsp_1_U331                                           | 580   | 792   | 3   |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_13_full_dsp_1_U332                                           | 624   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_13_full_dsp_1_U333                                           | 625   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     dadd_64ns_64ns_64_13_full_dsp_1_U334                                           | 624   | 927   | 3   |      |      |     |        |      |         |          |        |
+|     dmul_64ns_64ns_64_15_max_dsp_1_U335                                            | 127   | 465   | 11  |      |      |     |        |      |         |          |        |
+|     dmul_64ns_64ns_64_15_max_dsp_1_U336                                            | 127   | 464   | 11  |      |      |     |        |      |         |          |        |
+|     dmul_64ns_64ns_64_15_max_dsp_1_U337                                            | 114   | 464   | 11  |      |      |     |        |      |         |          |        |
+|     dmul_64ns_64ns_64_15_max_dsp_1_U338                                            | 116   | 464   | 11  |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 5     | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694                       | 13346 | 25299 |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694)                   | 136   | 1032  |     |      |      |     |        |      |         |          |        |
+|     ddiv_64ns_64ns_64_59_no_dsp_1_U387                                             | 3236  | 6034  |     |      |      |     |        |      |         |          |        |
+|     ddiv_64ns_64ns_64_59_no_dsp_1_U388                                             | 3236  | 6034  |     |      |      |     |        |      |         |          |        |
+|     ddiv_64ns_64ns_64_59_no_dsp_1_U389                                             | 3236  | 6098  |     |      |      |     |        |      |         |          |        |
+|     ddiv_64ns_64ns_64_59_no_dsp_1_U390                                             | 3236  | 6098  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 266   | 3     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24_fu_716                       | 983   | 681   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24_fu_716)                   | 461   | 679   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 524   | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742     | 45    | 222   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742) | 18    | 220   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 27    | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755     | 1935  | 1201  |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755) | 567   | 1199  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 1048  | 2     |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U451                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U452                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U453                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U454                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U455                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408                        | 692   | 595   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408)                    | 430   | 593   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 70    | 2     |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U41                                                       | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U42                                                       | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U43                                                       | 64    |       |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432                        | 404   | 531   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432)                    | 142   | 529   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 70    | 2     |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U72                                                       | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U73                                                       | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U74                                                       | 64    |       |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456                        | 503   | 657   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456)                    | 241   | 655   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 70    | 2     |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U103                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U104                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U105                                                      | 64    |       |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384                         | 474   | 851   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384)                     | 205   | 849   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 77    | 2     |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U10                                                       | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U11                                                       | 64    |       |     |      |      |     |        |      |         |          |        |
+|     sparsemux_9_2_64_1_1_U9                                                        | 64    |       |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514                        | 771   | 471   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514)                    | 473   | 466   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 298   | 5     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538                        | 715   | 406   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538)                    | 443   | 402   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 272   | 4     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562                        | 487   | 473   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562)                    | 215   | 469   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 272   | 4     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490                         | 491   | 556   |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490)                     | 216   | 551   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 275   | 5     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485                       | 4     | 5     |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485)                   |       | 3     |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 4     | 2     |     |      |      |     |        |      |         |          |        |
+|   grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480                        | 9     | 5     |     |      |      |     |        |      |         |          |        |
+|     (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480)                    | 5     | 3     |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_sequential_init_U                                       | 4     | 2     |     |      |      |     |        |      |         |          |        |
+|   temp2_U                                                                          |       |       |     | 2    |      |     |        |      |         |          |        |
++------------------------------------------------------------------------------------+-------+-------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 42.87% | OK     |
+| FD                                                        | 50%       | 36.06% | OK     |
+| LUTRAM+SRL                                                | 25%       | 5.93%  | OK     |
+| MUXF7                                                     | 15%       | 0.68%  | OK     |
+| DSP                                                       | 80%       | 54.33% | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.31%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 27.32% | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 1901      | 337    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 2.11   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 2.11   | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.500ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.350ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                                                                                                 | ENDPOINT PIN                                                                                | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                                                                                                |                                                                                             |              |            |                |          DELAY |        DELAY |
++-------+-------+--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.179 | ap_CS_fsm_reg[3]_rep__15/C                                                                                                     | dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[61]/D                                     |            1 |         79 |          3.793 |          0.302 |        3.491 |
+| Path2 | 0.225 | ap_CS_fsm_reg[3]_rep__15/C                                                                                                     | dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[56]/D                                     |            1 |         79 |          3.746 |          0.302 |        3.444 |
+| Path3 | 0.247 | ap_CS_fsm_reg[21]_rep__0/C                                                                                                     | dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[62]/D                                     |            1 |         65 |          3.725 |          0.266 |        3.459 |
+| Path4 | 0.252 | ap_CS_fsm_reg[21]_rep__0/C                                                                                                     | dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[60]/D                                     |            1 |         65 |          3.720 |          0.266 |        3.454 |
+| Path5 | 0.253 | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[50]/D |            1 |        128 |          3.749 |          0.327 |        3.422 |
++-------+-------+--------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +--------------------------------------------------------------------------------+----------------------+
+    | Path1 Cells                                                                    | Primitive Type       |
+    +--------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[3]_rep__15                                                       | FLOP_LATCH.flop.FDRE |
+    | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/din0_buf1[61]_i_1__8 | LUT.others.LUT5      |
+    | dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[61]                          | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------------------------------+----------------------+
+
+    +--------------------------------------------------------------------------------+----------------------+
+    | Path2 Cells                                                                    | Primitive Type       |
+    +--------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[3]_rep__15                                                       | FLOP_LATCH.flop.FDRE |
+    | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/din0_buf1[56]_i_1__8 | LUT.others.LUT5      |
+    | dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[56]                          | FLOP_LATCH.flop.FDRE |
+    +--------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------+----------------------+
+    | Path3 Cells                                                                     | Primitive Type       |
+    +---------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[21]_rep__0                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/din0_buf1[62]_i_1__12 | LUT.others.LUT3      |
+    | dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[62]                           | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------+----------------------+
+
+    +---------------------------------------------------------------------------------+----------------------+
+    | Path4 Cells                                                                     | Primitive Type       |
+    +---------------------------------------------------------------------------------+----------------------+
+    | ap_CS_fsm_reg[21]_rep__0                                                        | FLOP_LATCH.flop.FDRE |
+    | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/din0_buf1[60]_i_1__12 | LUT.others.LUT3      |
+    | dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[60]                           | FLOP_LATCH.flop.FDRE |
+    +---------------------------------------------------------------------------------+----------------------+
+
+    +------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | Path5 Cells                                                                                                                        | Primitive Type       |
+    +------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+    | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep       | FLOP_LATCH.flop.FDRE |
+    | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/select_ln131_1_reg_541[50]_i_1 | LUT.others.LUT5      |
+    | grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[50]                                          | FLOP_LATCH.flop.FDRE |
+    +------------------------------------------------------------------------------------------------------------------------------------+----------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+------------------------------------------------------------------------------+
+| Report Type              | Report Location                                                              |
++--------------------------+------------------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/extendedKalmanFilter_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/extendedKalmanFilter_failfast_routed.rpt                 |
+| status                   | impl/verilog/report/extendedKalmanFilter_status_routed.rpt                   |
+| timing                   | impl/verilog/report/extendedKalmanFilter_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/extendedKalmanFilter_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/extendedKalmanFilter_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/extendedKalmanFilter_utilization_hierarchical_routed.rpt |
++--------------------------+------------------------------------------------------------------------------+
+
+

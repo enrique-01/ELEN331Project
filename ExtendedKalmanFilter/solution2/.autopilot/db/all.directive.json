@@ -1,0 +1,44 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "extendedKalmanFilter",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "extendedKalmanFilter_label0",
+    "pragma": {
+      "name": "UNROLL",
+      "option": [
+        {
+          "name": "factor",
+          "value": "2"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/directives.tcl",
+    "sourceLine": 7,
+    "success": false
+  },
+  {
+    "functionLabel": "",
+    "functionName": "extendedKalmanFilter",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "extendedKalmanFilter"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

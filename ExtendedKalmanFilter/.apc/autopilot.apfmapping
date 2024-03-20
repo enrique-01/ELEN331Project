@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="ExtendedKalmanFilter.cpp" path="C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="tb_ExtendedKalmanFilter.cpp" path="C:\Users\Enrique\Desktop\ECEN331Project\tb_ExtendedKalmanFilter.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,199 @@
+<profile>
+<RunData>
+  <RUN_TYPE>impl</RUN_TYPE>
+  <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>4.000</TargetClockPeriod>
+  <AchievedClockPeriod>3.347</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>3.347</CP_FINAL>
+  <CP_ROUTE>3.347</CP_ROUTE>
+  <CP_SYNTH>3.052</CP_SYNTH>
+  <CP_TARGET>4.000</CP_TARGET>
+  <SLACK_FINAL>0.653</SLACK_FINAL>
+  <SLACK_ROUTE>0.653</SLACK_ROUTE>
+  <SLACK_SYNTH>0.948</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>0.000</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>0.653</WNS_FINAL>
+  <WNS_ROUTE>0.653</WNS_ROUTE>
+  <WNS_SYNTH>1.137</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>6</BRAM>
+    <CLB>0</CLB>
+    <DSP>34</DSP>
+    <FF>13787</FF>
+    <LATCH>0</LATCH>
+    <LUT>7720</LUT>
+    <SLICE>2861</SLICE>
+    <SRL>317</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>650</BRAM>
+    <CLB>0</CLB>
+    <DSP>600</DSP>
+    <FF>202800</FF>
+    <LUT>101400</LUT>
+    <SLICE>25350</SLICE>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="extendedKalmanFilter" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="15">A_U H_U K_U P_U dadd_64ns_64ns_64_13_full_dsp_1_U3 dadd_64ns_64ns_64_13_full_dsp_1_U4 dadddsub_64ns_64ns_64_13_full_dsp_1_U1 dadddsub_64ns_64ns_64_13_full_dsp_1_U2 ddiv_64ns_64ns_64_59_no_dsp_1_U7 dmul_64ns_64ns_64_15_max_dsp_1_U5 dmul_64ns_64ns_64_15_max_dsp_1_U6 temp1_U temp2_U tempP_U temp_U</SubModules>
+    <Resources BRAM="6" DSP="34" FF="13787" LUT="7720" LUTRAM="192" LogicLUT="7211" RAMB36="3" SRL="317"/>
+    <LocalResources FF="2615" LUT="659" LogicLUT="659"/>
+  </RtlModule>
+  <RtlModule CELL="inst/A_U" BINDMODULE="extendedKalmanFilter_A_ROM_AUTO_1R" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_A_ROM_AUTO_1R">
+    <Resources FF="1" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/H_U" BINDMODULE="extendedKalmanFilter_H_ROM_AUTO_1R" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_H_ROM_AUTO_1R">
+    <Resources FF="1" LUT="7" LogicLUT="7"/>
+  </RtlModule>
+  <RtlModule CELL="inst/K_U" BINDMODULE="extendedKalmanFilter_K_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_K_RAM_AUTO_1R1W">
+    <Resources FF="128" LUT="69" LUTRAM="64" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/P_U" BINDMODULE="extendedKalmanFilter_P_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_P_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="244" LogicLUT="244" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U3" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="927" LUT="625" LogicLUT="607" SRL="18"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U4" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="927" LUT="624" LogicLUT="607" SRL="17"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U1" BINDMODULE="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="928" LUT="951" LogicLUT="933" SRL="18"/>
+    <LocalResources FF="129" LUT="325" LogicLUT="325"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U2" BINDMODULE="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="928" LUT="690" LogicLUT="673" SRL="17"/>
+    <LocalResources FF="129" LUT="65" LogicLUT="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7" BINDMODULE="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1">
+    <Resources FF="6098" LUT="3236" LogicLUT="3133" SRL="103"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U5" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="553" LUT="173" LogicLUT="100" SRL="73"/>
+    <LocalResources FF="128" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U6" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="553" LUT="170" LogicLUT="98" SRL="72"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/temp1_U" BINDMODULE="extendedKalmanFilter_temp_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_temp_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="69" LUTRAM="64" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/temp2_U" BINDMODULE="extendedKalmanFilter_tempP_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_tempP_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="67" LogicLUT="67" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/tempP_U" BINDMODULE="extendedKalmanFilter_tempP_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_tempP_RAM_AUTO_1R1W">
+    <Resources BRAM="2" LUT="72" LogicLUT="72" RAMB36="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/temp_U" BINDMODULE="extendedKalmanFilter_temp_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_temp_RAM_AUTO_1R1W">
+    <Resources FF="64" LUT="68" LUTRAM="64" LogicLUT="4"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="3.349" DATAPATH_LOGIC_DELAY="0.266" DATAPATH_NET_DELAY="3.083" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U1/din1_buf1_reg[12]/D" LOGIC_LEVELS="1" MAX_FANOUT="131" SLACK="0.653" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[338]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ap_CS_fsm_reg[338]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1416"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/temp2_U/din1_buf1[12]_i_1__1" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1317"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U1/din1_buf1_reg[12]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="61"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.302" DATAPATH_LOGIC_DELAY="1.371" DATAPATH_NET_DELAY="1.931" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]/D" LOGIC_LEVELS="15" MAX_FANOUT="56" SLACK="0.685" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[25].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[25].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[25].ADDSUB/ADDSUB/Q_DEL/i_pipe/CHAIN_GEN[1].C_MUX.CARRY_MUX_i_1__24" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[0].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[4].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[8].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[12].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[16].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[20].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[24].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[28].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[32].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[36].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[40].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[44].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[48].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/CHAIN_GEN[52].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[26].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.287" DATAPATH_LOGIC_DELAY="1.371" DATAPATH_NET_DELAY="1.916" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]/D" LOGIC_LEVELS="15" MAX_FANOUT="56" SLACK="0.700" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[2].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[2].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[2].ADDSUB/ADDSUB/Q_DEL/i_pipe/CHAIN_GEN[1].C_MUX.CARRY_MUX_i_1__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[0].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[4].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[8].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[12].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[16].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[20].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[24].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[28].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[32].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[36].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[40].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[44].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[48].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[52].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.259" DATAPATH_LOGIC_DELAY="1.261" DATAPATH_NET_DELAY="1.998" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]/D" LOGIC_LEVELS="15" MAX_FANOUT="56" SLACK="0.728" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[32].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[32].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[32].ADDSUB/ADDSUB/Q_DEL/i_pipe/CHAIN_GEN[3].C_MUX.CARRY_MUX_i_1__31" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[0].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[4].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[8].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[12].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[16].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[20].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[24].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[28].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[32].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[36].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[40].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[44].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[48].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/CHAIN_GEN[52].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[33].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="3.285" DATAPATH_LOGIC_DELAY="1.335" DATAPATH_NET_DELAY="1.950" ENDPOINT_PIN="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]/D" LOGIC_LEVELS="15" MAX_FANOUT="56" SLACK="0.728" STARTPOINT_PIN="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[4].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[4].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[4].ADDSUB/ADDSUB/Q_DEL/i_pipe/CHAIN_GEN[1].C_MUX.CARRY_MUX_i_1__3" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[0].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[4].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[8].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[12].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[16].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[20].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[24].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[28].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[32].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[36].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[40].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[44].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[48].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/CHAIN_GEN[52].C_MUX.CARRY_MUX_CARRY4" PRIMITIVE_TYPE="CARRY.others.CARRY4" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[5].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/extendedKalmanFilter_design_analysis_routed.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/extendedKalmanFilter_failfast_routed.rpt"/>
+  <ReportFile TYPE="status" PATH="verilog/report/extendedKalmanFilter_status_routed.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/extendedKalmanFilter_timing_routed.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/extendedKalmanFilter_timing_paths_routed.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/extendedKalmanFilter_utilization_routed.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/extendedKalmanFilter_utilization_hierarchical_routed.rpt"/>
+</VivadoReportFiles>
+</profile>

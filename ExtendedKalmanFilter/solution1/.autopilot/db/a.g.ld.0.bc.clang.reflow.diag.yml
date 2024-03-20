@@ -1,0 +1,64 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ExtendedKalmanFilter.cpp, Line: 39, Column: 0 }
+Function:        _Z20extendedKalmanFilterPdS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'stateTransition(double*)'
+    DebugLoc:        { File: ExtendedKalmanFilter.cpp, Line: 23, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'extendedKalmanFilter(double*, double*)'
+    DebugLoc:        { File: ExtendedKalmanFilter.cpp, Line: 39, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ExtendedKalmanFilter.cpp, Line: 39, Column: 0 }
+Function:        _Z20extendedKalmanFilterPdS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'measurementFunction(double*)'
+    DebugLoc:        { File: ExtendedKalmanFilter.cpp, Line: 32, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'extendedKalmanFilter(double*, double*)'
+    DebugLoc:        { File: ExtendedKalmanFilter.cpp, Line: 39, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ExtendedKalmanFilter.cpp, Line: 39, Column: 0 }
+Function:        _Z20extendedKalmanFilterPdS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          gps_measurement_data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ExtendedKalmanFilter.cpp, Line: 39, Column: 0 }
+Function:        _Z20extendedKalmanFilterPdS_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          output_predict_data
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...

@@ -1,0 +1,1136 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Mar 17 14:10:57 2024
+# Process ID: 27352
+# Current directory: C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+# Running On: AsusROG-Enrique, OS: Windows, CPU Frequency: 2918 MHz, CPU Physical cores: 10, Host memory: 16780 MB
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 567.523 ; gain = 183.199
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.cache/ip 
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+Command: synth_design -top bd_0_hls_inst_0 -part xc7k160tfbg676-2 -directive sdx_optimization_effort_high -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10640
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1436.270 ; gain = 438.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_temp2_RAM_AUTO_1R1W' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_temp2_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_temp2_RAM_AUTO_1R1W' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_temp2_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_sparsemux_9_2_64_1_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_sparsemux_9_2_64_1_1.v:9]
+INFO: [Synth 8-226] default block is never used [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_sparsemux_9_2_64_1_1.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_sparsemux_9_2_64_1_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_sparsemux_9_2_64_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_flow_control_loop_pipe_sequential_init' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_mux_4_2_64_1_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_mux_4_2_64_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_mux_4_2_64_1_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_mux_4_2_64_1_1.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [D:/Xilinx/Vivado/2023.2/scripts/rt/data/unisim_comp.v:81293]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip' [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/ip/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'extendedKalmanFilter' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/a8bf/hdl/verilog/extendedKalmanFilter.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.v:53]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized15 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized109 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[11] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[10] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[9] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DEC_OP_STATE[8] in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DIVIDE_BY_ZERO_IN in module flt_dec_op_lat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized81 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized53 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[18] in module carry_chain__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized59 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized19 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized49 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized41 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized39 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized79 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized87 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized156 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized156 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized156 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized154 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized154 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized154 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_7_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_7_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_7_viv__parameterized73 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[47] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[46] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[45] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[44] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[43] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[42] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[41] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[40] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[39] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[38] in module flt_mult_round is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MANT_CASC_IN[37] in module flt_mult_round is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:49 . Memory (MB): peak = 1853.844 ; gain = 855.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:51 . Memory (MB): peak = 1853.844 ; gain = 855.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:51 . Memory (MB): peak = 1853.844 ; gain = 855.898
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 2188.824 ; gain = 63.551
+INFO: [Netlist 29-17] Analyzing 34158 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/extendedKalmanFilter_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/extendedKalmanFilter_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.400 . Memory (MB): peak = 2654.844 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 994 instances were transformed.
+  FDE => FDRE: 994 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2858.406 ; gain = 203.562
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:58 ; elapsed = 00:02:42 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:58 ; elapsed = 00:02:42 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:02:42 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:04 ; elapsed = 00:03:04 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1:/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1:/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1:/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1:/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1:/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized14) to 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1:/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1:/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized14) to 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1:/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1:/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized14) to 'extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1:/extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1:/extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U500/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U500/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U500/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized14) to 'inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U500/extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[54].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '54' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[53].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '53' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[52].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '52' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[51].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '51' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[50].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '50' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[49].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '49' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[48].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '48' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[47].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '47' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[46].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '46' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[45].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '45' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[44].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '44' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[43].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '43' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[42].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '42' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[41].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '41' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[40].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '40' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[39].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '39' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[38].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '38' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[37].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '37' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[36].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '36' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[35].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '35' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[34].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '34' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[33].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '33' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[32].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '32' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[31].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '31' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[30].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '30' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[29].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '29' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[28].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '28' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[27].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '27' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[26].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '26' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[25].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '25' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[24].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '24' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[23].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '23' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[22].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '22' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[21].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '21' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[20].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '20' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[19].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '19' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[18].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '18' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[17].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '17' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[16].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '16' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[15].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '15' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[14].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '14' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[13].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '13' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[12].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '12' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[11].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[10].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '10' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[9].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '9' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[8].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '8' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[7].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '7' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[6].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '6' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[5].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '5' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[4].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '4' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[3].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '3' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[2].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '2' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'RT[1].Q_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '55' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3917] design flt_div_mant has port Q_MANT[0] driven by constant 1
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[52]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[53]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[53]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[54]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[54]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[55]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[55]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[56]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[56]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[57]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[57]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[58]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[58]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[59]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[59]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[60]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[60]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[61]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[52]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[53]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[53]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[54]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[54]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[55]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[55]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[56]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[56]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[57]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[57]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[58]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[58]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[59]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[59]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[60]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[60]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[61]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[52]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[53]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[53]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[54]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[54]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[55]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[55]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[56]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[56]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[57]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[57]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[58]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[58]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[59]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[59]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[60]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[60]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_12_reg_451_reg[61]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[52]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[53]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[53]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[54]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[54]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[55]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[55]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[56]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[56]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[57]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[57]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[58]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[58]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[59]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[59]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[60]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[60]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/tmp_11_reg_436_reg[61]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[0]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[1]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[2]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[3]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[4]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[5]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[6]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[7]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[8]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[9]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[10]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[11]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[12]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[13]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[14]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[15]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[16]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[34]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[35]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[36]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[37]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[38]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[39]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[40]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[41]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[42]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[43]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[44]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[45]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[46]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[47]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[48]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[49]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[50]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[51]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[17]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[18]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[19]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[20]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[21]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[22]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[23]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[24]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[25]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[26]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[27]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[28]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[29]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[30]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[31]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[32]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_6_reg_451_reg[33]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[0]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[1]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[2]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[3]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[4]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[5]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[6]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[7]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[8]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[9]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[10]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Synth 8-3886] merging instance 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[11]' (FD) to 'grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/tmp_5_reg_436_reg[51]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U519/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U518/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U524/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U523/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/\tmp_s_reg_421_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/\tmp_4_reg_426_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674/\select_ln113_reg_236_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/\tmp_s_reg_421_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/\tmp_10_reg_426_reg[51] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654/\select_ln124_reg_261_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674/ap_done_reg_reg)
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562/\tmp_3_reg_451_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U497/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U498/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U499/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480/\S_0_0_0_fu_36_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644/\select_ln124_4_reg_261_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562/\tmp_s_reg_421_reg[51] )
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmul_64ns_64ns_64_15_max_dsp_1_U511/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmul_64ns_64ns_64_15_max_dsp_1_U512/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmul_64ns_64ns_64_15_max_dsp_1_U513/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmul_64ns_64ns_64_15_max_dsp_1_U520/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmul_64ns_64ns_64_15_max_dsp_1_U521/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dmul_64ns_64ns_64_15_max_dsp_1_U522/extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3936] Found unconnected internal register 'ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[2].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '16' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:366]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/NORMALIZE_RND1_DEL/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '2' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514/\tmp_s_reg_421_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684/\select_ln113_reg_236_reg[33] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485/\S_1_1_2_fu_36_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U506/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U505/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dmul_64ns_64ns_64_15_max_dsp_1_U504/\extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1_ip_u/inst /i_synth/\MULT.OP/i_non_prim.EXP/STATE_DEC_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dadddsub_64ns_64ns_64_13_full_dsp_1_U500/\extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst /i_synth/\ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514/\tmp_9_reg_451_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408/ap_done_reg_reg)
+INFO: [Synth 8-3936] Found unconnected internal register 'ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[2].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '16' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:366]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-3936] Found unconnected internal register 'ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[2].DEL_Z_D/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '16' to '1' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:379]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2]' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:366]
+INFO: [Synth 8-3936] Found unconnected internal register 'EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '12' to '11' bits. [c:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.gen/sources_1/bd/bd_0/ipshared/c4f2/hdl/xbip_pipe_v3_0_vh_rfs.vhd:361]
+INFO: [Synth 8-5544] ROM "sparsemux_9_2_64_1_1_U438/dout_tmp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sparsemux_9_2_64_1_1_U440/dout_tmp" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dsub_64ns_64ns_64_13_full_dsp_1_U492/\extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst /i_synth/\ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dsub_64ns_64ns_64_13_full_dsp_1_U491/\extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1_ip_u/inst /i_synth/\ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24_fu_716/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742/\tmp_22_reg_448_reg[51] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742/\tmp_20_reg_428_reg[51] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742/\ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742/ap_done_reg_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:04:38 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:36 ; elapsed = 00:04:57 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:24 ; elapsed = 00:07:14 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:50 ; elapsed = 00:08:03 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:05 ; elapsed = 00:08:45 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:05 ; elapsed = 00:08:46 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:18 ; elapsed = 00:09:22 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:19 ; elapsed = 00:09:23 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:21 ; elapsed = 00:09:29 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:21 ; elapsed = 00:09:31 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                           | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper__parameterized0_8657  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_8658                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_8525  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_8473  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_8474                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_8341  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_8289  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_8290                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_8157  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_8105  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_8106                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_7973  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7921  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_7922                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_7789  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7737  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_7738                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_7605  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7553  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_7554                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_7421  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7369  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_7370                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_7237  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7185  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_7186                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_7053  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_7001  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_7002                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_6869  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6817  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_6818                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_6685  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6633  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_6634                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_6501  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6449  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_6450                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_6317  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6265  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_6266                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_6133  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_6081  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_6082                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_5949  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_5897  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_5898                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_5765  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_5713  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_5714                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_5581  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_5529  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_5530                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_5397  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_5319  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_5320  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_5321  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_5322  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_5323  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_5324  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_5325  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_5326  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_5327 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_5328 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_5304  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_5233  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_5234  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_5235  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_5236  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_5237  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_5238  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_5239  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_5240  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_5241 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_5242 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_5218  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_5147  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_5148  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_5149  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_5150  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_5151  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_5152  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_5153  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_5154  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_5155 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_5156 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_5132  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_5061  | (A'*B')'              | 17     | 17     | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_5062  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_5063  | (PCIN+(A''*B'')')'    | 17     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_5064  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_5065  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_5066  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_5067  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_5068  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_5069 | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_5070 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_5046  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4975  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4976  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4977  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4978  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4979  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4980  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4981  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4982  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4983 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4984 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4960  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4889  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4890  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4891  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4892  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4893  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4894  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4895  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4896  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4897 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4898 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4874  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4803  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4804  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4805  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4806  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4807  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4808  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4809  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4810  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4811 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4812 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4788  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4717  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4718  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4719  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4720  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4721  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4722  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4723  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4724  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4725 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4726 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4702  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4631  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4632  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4633  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4634  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4635  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4636  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4637  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4638  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4639 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4640 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4616  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4545  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4546  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4547  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4548  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4549  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4550  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4551  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4552  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4553 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4554 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4530  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4459  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4460  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4461  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4462  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4463  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4464  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4465  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4466  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4467 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4468 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4444  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4373  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4374  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4375  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4376  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4377  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4378  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4379  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4380  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4381 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4382 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4358  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4287  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4288  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4289  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4290  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4291  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4292  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4293  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4294  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4295 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4296 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4272  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4201  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4202  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4203  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4204  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4205  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4206  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4207  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4208  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4209 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4210 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4186  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4115  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4116  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4117  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4118  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4119  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4120  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4121  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4122  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4123 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4124 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4100  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_4029  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_4030  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_4031  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_4032  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_4033  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_4034  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_4035  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_4036  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_4037 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_4038 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_4014  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3971  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_3972                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_3839  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3787  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_3788                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_3655  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3593  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_3594                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_3466  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3415  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_3416                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_3283  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3231  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_3232                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_3099  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_3047  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_3048                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_2915  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2835  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_2836  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_2837  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_2838  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_2839  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_2840  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_2841  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_2842  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_2843 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_2844 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_2820  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_2749  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_2750  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_2751  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_2752  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_2753  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_2754  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_2755  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_2756  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_2757 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_2758 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_2734  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2684  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_2685                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_2557  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2506  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_2507                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_2374  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_2322  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper_2323                  | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_2190  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0       | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper                       | (A'':B'')'            | 29     | 18     | -      | -      | 16     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized1_2061  | (C+A:B)'              | 0      | 2      | 47     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1993  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_1994  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_1995  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_1996  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_1997  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_1998  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_1999  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_2000  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_2001 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_2002 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_1978  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1907  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_1908  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_1909  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_1910  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_1911  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_1912  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_1913  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_1914  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_1915 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_1916 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_1892  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2_1821  | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3_1822  | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4_1823  | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5_1824  | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6_1825  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7_1826  | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8_1827  | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9_1828  | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10_1829 | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11_1830 | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1_1806  | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2       | (A'*B')'              | 17     | 0      | -      | -      | 17     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized3       | (PCIN>>17+(A'*B)')'   | 17     | 0      | -      | -      | 16     | 1    | 0    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized4       | (PCIN+(A''*B'')')'    | 17     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized5       | (PCIN>>17+(A''*B')')' | 17     | 0      | -      | -      | 16     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized6       | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 16     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized7       | (PCIN+(A''*B'')')'    | 19     | 17     | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized8       | (PCIN>>17+(A'*B'')')' | 0      | 17     | -      | -      | 16     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized9       | (PCIN+(A''*B'')')'    | 19     | 0      | -      | -      | 17     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized10      | (PCIN>>17+(A'*B'')')' | 0      | 0      | -      | -      | 38     | 1    | 2    | -    | -    | -     | 1    | 1    | 
+|dsp48e1_wrapper__parameterized11      | PCIN>>17+(A'*B'')'    | 0      | 2      | -      | -      | 21     | 1    | 2    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized1       | Dynamic               | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
++--------------------------------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   392|
+|2     |DSP48E1  |   326|
+|12    |LUT1     |   322|
+|13    |LUT2     |  3486|
+|14    |LUT3     | 18303|
+|15    |LUT4     |  5326|
+|16    |LUT5     |  7391|
+|17    |LUT6     | 12215|
+|18    |MUXCY    | 16994|
+|19    |MUXF7    |   344|
+|20    |MUXF8    |    28|
+|21    |RAMB36E1 |     1|
+|22    |SRL16E   |  2450|
+|23    |SRLC32E  |   500|
+|24    |XORCY    | 14384|
+|25    |FDE      |   994|
+|26    |FDRE     | 72786|
+|27    |FDSE     |    25|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:22 ; elapsed = 00:09:32 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 536 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:28 ; elapsed = 00:07:54 . Memory (MB): peak = 2858.406 ; gain = 855.898
+Synthesis Optimization Complete : Time (s): cpu = 00:03:22 ; elapsed = 00:09:34 . Memory (MB): peak = 2858.406 ; gain = 1860.461
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2858.406 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 33463 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 2858.406 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5628 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 4634 instances
+  FDE => FDRE: 994 instances
+
+Synth Design complete | Checksum: db084326
+INFO: [Common 17-83] Releasing license: Synthesis
+483 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:04:00 ; elapsed = 00:11:13 . Memory (MB): peak = 2858.406 ; gain = 2276.535
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.392 . Memory (MB): peak = 2858.406 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:00:39 . Memory (MB): peak = 2858.406 ; gain = 0.000
+write_verilog: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 2858.406 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 2858.406 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = a5b4dbf5e99ca01d
+INFO: [Coretcl 2-1174] Renamed 9023 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.447 . Memory (MB): peak = 2858.406 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution2/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2858.406 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+write_verilog: Time (s): cpu = 00:00:11 ; elapsed = 00:00:25 . Memory (MB): peak = 2858.406 ; gain = 0.000
+write_vhdl: Time (s): cpu = 00:00:19 ; elapsed = 00:00:44 . Memory (MB): peak = 2858.406 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 17 14:25:41 2024...

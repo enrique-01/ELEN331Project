@@ -1,0 +1,145 @@
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4386:5: warning: Added loop label VITIS_LOOP_47_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_47_1: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4386:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4388:2: warning: Added loop label VITIS_LOOP_49_2:   [xilinx-label-all-loops]
+ for (int j = 0; j < 4; ++j) {
+ ^~~
+ VITIS_LOOP_49_2: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4388:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4395:5: warning: Added loop label VITIS_LOOP_56_3:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_56_3: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4395:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4397:2: warning: Added loop label VITIS_LOOP_58_4:   [xilinx-label-all-loops]
+ for (int j = 0; j < 4; ++j) {
+ ^~~
+ VITIS_LOOP_58_4: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4397:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4399:13: warning: Added loop label VITIS_LOOP_60_5:   [xilinx-label-all-loops]
+            for (int k = 0; k < 4; ++k) {
+            ^~~
+            VITIS_LOOP_60_5: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4399:13: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4404:5: warning: Added loop label VITIS_LOOP_65_6:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_65_6: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4404:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4406:2: warning: Added loop label VITIS_LOOP_67_7:   [xilinx-label-all-loops]
+ for (int j = 0; j < 4; ++j) {
+ ^~~
+ VITIS_LOOP_67_7: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4406:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4408:13: warning: Added loop label VITIS_LOOP_69_8:   [xilinx-label-all-loops]
+            for (int k = 0; k < 4; ++k) {
+            ^~~
+            VITIS_LOOP_69_8: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4408:13: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4423:5: warning: Added loop label VITIS_LOOP_84_9:   [xilinx-label-all-loops]
+    for (int i = 0; i < 2; ++i) {
+    ^~~
+    VITIS_LOOP_84_9: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4423:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4425:2: warning: Added loop label VITIS_LOOP_86_10:   [xilinx-label-all-loops]
+ for (int j = 0; j < 4; ++j) {
+ ^~~
+ VITIS_LOOP_86_10: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4425:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4431:5: warning: Added loop label VITIS_LOOP_92_11:   [xilinx-label-all-loops]
+    for (int i = 0; i < 2; ++i) {
+    ^~~
+    VITIS_LOOP_92_11: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4431:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4433:2: warning: Added loop label VITIS_LOOP_94_12:   [xilinx-label-all-loops]
+ for (int j = 0; j < 2; ++j) {
+ ^~~
+ VITIS_LOOP_94_12: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4433:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4438:5: warning: Added loop label VITIS_LOOP_99_13:   [xilinx-label-all-loops]
+    for (int i = 0; i < 2; ++i) {
+    ^~~
+    VITIS_LOOP_99_13: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4438:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4440:2: warning: Added loop label VITIS_LOOP_101_14:   [xilinx-label-all-loops]
+ for (int j = 0; j < 4; ++j) {
+ ^~~
+ VITIS_LOOP_101_14: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4440:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4442:13: warning: Added loop label VITIS_LOOP_103_15:   [xilinx-label-all-loops]
+            for (int k = 0; k < 4; ++k) {
+            ^~~
+            VITIS_LOOP_103_15: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4442:13: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4447:5: warning: Added loop label VITIS_LOOP_108_16:   [xilinx-label-all-loops]
+    for (int i = 0; i < 2; ++i) {
+    ^~~
+    VITIS_LOOP_108_16: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4447:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4449:2: warning: Added loop label VITIS_LOOP_110_17:   [xilinx-label-all-loops]
+ for (int j = 0; j < 2; ++j) {
+ ^~~
+ VITIS_LOOP_110_17: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4449:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4451:13: warning: Added loop label VITIS_LOOP_112_18:   [xilinx-label-all-loops]
+            for (int k = 0; k < 4; ++k) {
+            ^~~
+            VITIS_LOOP_112_18: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4451:13: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4458:5: warning: Added loop label VITIS_LOOP_119_19:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_119_19: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4458:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4460:2: warning: Added loop label VITIS_LOOP_121_20:   [xilinx-label-all-loops]
+ for (int j = 0; j < 2; ++j) {
+ ^~~
+ VITIS_LOOP_121_20: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4460:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4462:13: warning: Added loop label VITIS_LOOP_123_21:   [xilinx-label-all-loops]
+            for (int k = 0; k < 4; ++k) {
+            ^~~
+            VITIS_LOOP_123_21: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4462:13: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4467:5: warning: Added loop label VITIS_LOOP_128_22:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_128_22: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4467:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4469:2: warning: Added loop label VITIS_LOOP_130_23:   [xilinx-label-all-loops]
+ for (int j = 0; j < 2; ++j) {
+ ^~~
+ VITIS_LOOP_130_23: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4469:2: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4474:5: warning: Added loop label VITIS_LOOP_135_24:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_135_24: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4474:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4479:5: warning: Added loop label VITIS_LOOP_140_25:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_140_25: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4479:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4480:9: warning: Added loop label VITIS_LOOP_141_26:   [xilinx-label-all-loops]
+        for (int j = 0; j < 4; ++j) {
+        ^~~
+        VITIS_LOOP_141_26: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4480:9: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4482:13: warning: Added loop label VITIS_LOOP_143_27:   [xilinx-label-all-loops]
+            for (int k = 0; k < 2; ++k) {
+            ^~~
+            VITIS_LOOP_143_27: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4482:13: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4487:5: warning: Added loop label VITIS_LOOP_148_28:   [xilinx-label-all-loops]
+    for (int i = 0; i < 4; ++i) {
+    ^~~
+    VITIS_LOOP_148_28: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4487:5: note: FIX-IT applied suggested code changes
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4488:9: warning: Added loop label VITIS_LOOP_149_29:   [xilinx-label-all-loops]
+        for (int j = 0; j < 4; ++j) {
+        ^~~
+        VITIS_LOOP_149_29: 
+C:\Users\Enrique\Desktop\ECEN331Project\ExtendedKalmanFilter\solution2\.autopilot\db\ExtendedKalmanFilter.pp.0.cpp:4488:9: note: FIX-IT applied suggested code changes

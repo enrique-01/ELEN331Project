@@ -1,0 +1,487 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Sun Mar 17 14:43:13 2024
+| Host         : AsusROG-Enrique running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/extendedKalmanFilter_timing_paths_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7k160t-fbg676
+| Speed File   : -2  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.179ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[3]_rep__15/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[61]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.793ns  (logic 0.302ns (7.962%)  route 3.491ns (92.038%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X22Y153        FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[3]_rep__15/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X22Y153        FDRE (Prop_fdre_C_Q)         0.259     0.796 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[3]_rep__15/Q
+                         net (fo=79, routed)          3.491     4.287    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/din0_buf1_reg[62]
+    SLICE_X53Y193        LUT5 (Prop_lut5_I3_O)        0.043     4.330 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/din0_buf1[61]_i_1__8/O
+                         net (fo=1, routed)           0.000     4.330    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/grp_fu_2082_p0[61]
+    SLICE_X53Y193        FDRE                                         r  bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[61]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/ap_clk
+    SLICE_X53Y193        FDRE                                         r  bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[61]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X53Y193        FDRE (Setup_fdre_C_D)        0.034     4.509    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[61]
+  -------------------------------------------------------------------
+                         required time                          4.509    
+                         arrival time                          -4.330    
+  -------------------------------------------------------------------
+                         slack                                  0.179    
+
+Slack (MET) :             0.225ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[3]_rep__15/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[56]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.746ns  (logic 0.302ns (8.062%)  route 3.444ns (91.938%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X22Y153        FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[3]_rep__15/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X22Y153        FDRE (Prop_fdre_C_Q)         0.259     0.796 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[3]_rep__15/Q
+                         net (fo=79, routed)          3.444     4.240    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/din0_buf1_reg[62]
+    SLICE_X52Y192        LUT5 (Prop_lut5_I3_O)        0.043     4.283 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/din0_buf1[56]_i_1__8/O
+                         net (fo=1, routed)           0.000     4.283    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/grp_fu_2082_p0[56]
+    SLICE_X52Y192        FDRE                                         r  bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[56]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/ap_clk
+    SLICE_X52Y192        FDRE                                         r  bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[56]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X52Y192        FDRE (Setup_fdre_C_D)        0.033     4.508    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U520/din0_buf1_reg[56]
+  -------------------------------------------------------------------
+                         required time                          4.508    
+                         arrival time                          -4.283    
+  -------------------------------------------------------------------
+                         slack                                  0.225    
+
+Slack (MET) :             0.247ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[21]_rep__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[62]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.725ns  (logic 0.266ns (7.141%)  route 3.459ns (92.859%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X23Y141        FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[21]_rep__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y141        FDRE (Prop_fdre_C_Q)         0.223     0.760 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[21]_rep__0/Q
+                         net (fo=65, routed)          3.459     4.219    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/din0_buf1_reg[0]
+    SLICE_X43Y195        LUT3 (Prop_lut3_I1_O)        0.043     4.262 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/din0_buf1[62]_i_1__12/O
+                         net (fo=1, routed)           0.000     4.262    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/grp_fu_2090_p0[62]
+    SLICE_X43Y195        FDRE                                         r  bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[62]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/ap_clk
+    SLICE_X43Y195        FDRE                                         r  bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[62]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X43Y195        FDRE (Setup_fdre_C_D)        0.034     4.509    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[62]
+  -------------------------------------------------------------------
+                         required time                          4.509    
+                         arrival time                          -4.262    
+  -------------------------------------------------------------------
+                         slack                                  0.247    
+
+Slack (MET) :             0.252ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/ap_CS_fsm_reg[21]_rep__0/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[60]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.720ns  (logic 0.266ns (7.151%)  route 3.454ns (92.849%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/ap_clk
+    SLICE_X23Y141        FDRE                                         r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[21]_rep__0/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y141        FDRE (Prop_fdre_C_Q)         0.223     0.760 r  bd_0_i/hls_inst/inst/ap_CS_fsm_reg[21]_rep__0/Q
+                         net (fo=65, routed)          3.454     4.214    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/din0_buf1_reg[0]
+    SLICE_X43Y195        LUT3 (Prop_lut3_I1_O)        0.043     4.257 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/din0_buf1[60]_i_1__12/O
+                         net (fo=1, routed)           0.000     4.257    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/grp_fu_2090_p0[60]
+    SLICE_X43Y195        FDRE                                         r  bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[60]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/ap_clk
+    SLICE_X43Y195        FDRE                                         r  bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[60]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X43Y195        FDRE (Setup_fdre_C_D)        0.034     4.509    bd_0_i/hls_inst/inst/dmul_64ns_64ns_64_15_max_dsp_1_U522/din0_buf1_reg[60]
+  -------------------------------------------------------------------
+                         required time                          4.509    
+                         arrival time                          -4.257    
+  -------------------------------------------------------------------
+                         slack                                  0.252    
+
+Slack (MET) :             0.253ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[50]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.749ns  (logic 0.327ns (8.722%)  route 3.422ns (91.278%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X47Y145        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y145        FDRE (Prop_fdre_C_Q)         0.204     0.741 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/Q
+                         net (fo=128, routed)         3.422     4.163    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep_n_0
+    SLICE_X78Y218        LUT5 (Prop_lut5_I1_O)        0.123     4.286 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/select_ln131_1_reg_541[50]_i_1/O
+                         net (fo=1, routed)           0.000     4.286    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_fu_272_p3[50]
+    SLICE_X78Y218        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[50]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ap_clk
+    SLICE_X78Y218        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[50]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X78Y218        FDRE (Setup_fdre_C_D)        0.064     4.539    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[50]
+  -------------------------------------------------------------------
+                         required time                          4.539    
+                         arrival time                          -4.286    
+  -------------------------------------------------------------------
+                         slack                                  0.253    
+
+Slack (MET) :             0.254ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[54]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.718ns  (logic 0.327ns (8.795%)  route 3.391ns (91.205%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X47Y145        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y145        FDRE (Prop_fdre_C_Q)         0.204     0.741 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/Q
+                         net (fo=128, routed)         3.391     4.132    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep_n_0
+    SLICE_X73Y221        LUT5 (Prop_lut5_I1_O)        0.123     4.255 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/select_ln131_1_reg_541[54]_i_1/O
+                         net (fo=1, routed)           0.000     4.255    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_fu_272_p3[54]
+    SLICE_X73Y221        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ap_clk
+    SLICE_X73Y221        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[54]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X73Y221        FDRE (Setup_fdre_C_D)        0.034     4.509    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[54]
+  -------------------------------------------------------------------
+                         required time                          4.509    
+                         arrival time                          -4.255    
+  -------------------------------------------------------------------
+                         slack                                  0.254    
+
+Slack (MET) :             0.258ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[36]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.744ns  (logic 0.327ns (8.734%)  route 3.417ns (91.266%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X47Y145        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y145        FDRE (Prop_fdre_C_Q)         0.204     0.741 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/Q
+                         net (fo=128, routed)         3.417     4.158    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep_n_0
+    SLICE_X76Y219        LUT5 (Prop_lut5_I1_O)        0.123     4.281 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/select_ln131_1_reg_541[36]_i_1/O
+                         net (fo=1, routed)           0.000     4.281    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_fu_272_p3[36]
+    SLICE_X76Y219        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[36]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ap_clk
+    SLICE_X76Y219        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[36]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X76Y219        FDRE (Setup_fdre_C_D)        0.064     4.539    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[36]
+  -------------------------------------------------------------------
+                         required time                          4.539    
+                         arrival time                          -4.281    
+  -------------------------------------------------------------------
+                         slack                                  0.258    
+
+Slack (MET) :             0.258ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[37]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.745ns  (logic 0.327ns (8.732%)  route 3.418ns (91.268%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X47Y145        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y145        FDRE (Prop_fdre_C_Q)         0.204     0.741 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/Q
+                         net (fo=128, routed)         3.418     4.159    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep_n_0
+    SLICE_X76Y219        LUT5 (Prop_lut5_I1_O)        0.123     4.282 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/select_ln131_1_reg_541[37]_i_1/O
+                         net (fo=1, routed)           0.000     4.282    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_fu_272_p3[37]
+    SLICE_X76Y219        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[37]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ap_clk
+    SLICE_X76Y219        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[37]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X76Y219        FDRE (Setup_fdre_C_D)        0.065     4.540    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[37]
+  -------------------------------------------------------------------
+                         required time                          4.540    
+                         arrival time                          -4.282    
+  -------------------------------------------------------------------
+                         slack                                  0.258    
+
+Slack (MET) :             0.259ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.712ns  (logic 0.327ns (8.810%)  route 3.385ns (91.190%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X47Y145        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y145        FDRE (Prop_fdre_C_Q)         0.204     0.741 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/Q
+                         net (fo=128, routed)         3.385     4.126    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep_n_0
+    SLICE_X81Y220        LUT5 (Prop_lut5_I1_O)        0.123     4.249 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/select_ln131_1_reg_541[25]_i_1/O
+                         net (fo=1, routed)           0.000     4.249    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_fu_272_p3[25]
+    SLICE_X81Y220        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ap_clk
+    SLICE_X81Y220        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[25]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X81Y220        FDRE (Setup_fdre_C_D)        0.033     4.508    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[25]
+  -------------------------------------------------------------------
+                         required time                          4.508    
+                         arrival time                          -4.249    
+  -------------------------------------------------------------------
+                         slack                                  0.259    
+
+Slack (MET) :             0.261ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Destination:            bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[48]/D
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@2.000ns period=4.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            4.000ns  (ap_clk rise@4.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        3.711ns  (logic 0.327ns (8.812%)  route 3.384ns (91.188%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 4.510 - 4.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.537     0.537    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_clk
+    SLICE_X47Y145        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y145        FDRE (Prop_fdre_C_Q)         0.204     0.741 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep/Q
+                         net (fo=128, routed)         3.384     4.125    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/ap_loop_init_int_reg_rep_n_0
+    SLICE_X81Y219        LUT5 (Prop_lut5_I1_O)        0.123     4.248 r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U/select_ln131_1_reg_541[48]_i_1/O
+                         net (fo=1, routed)           0.000     4.248    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_fu_272_p3[48]
+    SLICE_X81Y219        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[48]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)     4.000     4.000 r  
+                                                      0.000     4.000 r  ap_clk (IN)
+                         net (fo=76399, unset)        0.510     4.510    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ap_clk
+    SLICE_X81Y219        FDRE                                         r  bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[48]/C
+                         clock pessimism              0.000     4.510    
+                         clock uncertainty           -0.035     4.475    
+    SLICE_X81Y219        FDRE (Setup_fdre_C_D)        0.034     4.509    bd_0_i/hls_inst/inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/select_ln131_1_reg_541_reg[48]
+  -------------------------------------------------------------------
+                         required time                          4.509    
+                         arrival time                          -4.248    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+
+
+

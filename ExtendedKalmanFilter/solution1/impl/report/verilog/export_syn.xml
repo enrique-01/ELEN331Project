@@ -1,0 +1,213 @@
+<profile>
+  <RunData>
+    <RUN_TYPE>synth</RUN_TYPE>
+    <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+    <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+  </RunData>
+  <TimingReport>
+    <TargetClockPeriod>4.000</TargetClockPeriod>
+    <AchievedClockPeriod>3.052</AchievedClockPeriod>
+    <CLOCK_NAME>ap_clk</CLOCK_NAME>
+    <CP_FINAL>3.052</CP_FINAL>
+    <CP_ROUTE>NA</CP_ROUTE>
+    <CP_SYNTH>3.052</CP_SYNTH>
+    <CP_TARGET>4.000</CP_TARGET>
+    <SLACK_FINAL>0.948</SLACK_FINAL>
+    <SLACK_ROUTE/>
+    <SLACK_SYNTH>0.948</SLACK_SYNTH>
+    <TIMING_MET>TRUE</TIMING_MET>
+    <TNS_FINAL>0.000</TNS_FINAL>
+    <TNS_ROUTE>NA</TNS_ROUTE>
+    <TNS_SYNTH>0.000</TNS_SYNTH>
+    <WNS_FINAL>1.137</WNS_FINAL>
+    <WNS_ROUTE>NA</WNS_ROUTE>
+    <WNS_SYNTH>1.137</WNS_SYNTH>
+  </TimingReport>
+  <AreaReport>
+    <Resources>
+      <BRAM>6</BRAM>
+      <CLB>0</CLB>
+      <DSP>34</DSP>
+      <FF>13899</FF>
+      <LATCH>0</LATCH>
+      <LUT>8050</LUT>
+      <SRL>455</SRL>
+      <URAM>0</URAM>
+    </Resources>
+    <AvailableResources>
+      <BRAM>650</BRAM>
+      <CLB>0</CLB>
+      <DSP>600</DSP>
+      <FF>202800</FF>
+      <LUT>101400</LUT>
+      <URAM>0</URAM>
+    </AvailableResources>
+  </AreaReport>
+  <RtlModules>
+    <RtlModule CELL="inst" DEPTH="0" IS_TOP="1" TYPE="function" MODULENAME="extendedKalmanFilter" DISPNAME="inst" RTLNAME="extendedKalmanFilter">
+      <SubModules count="15">A_U H_U K_U P_U dadd_64ns_64ns_64_13_full_dsp_1_U3 dadd_64ns_64ns_64_13_full_dsp_1_U4 dadddsub_64ns_64ns_64_13_full_dsp_1_U1 dadddsub_64ns_64ns_64_13_full_dsp_1_U2 ddiv_64ns_64ns_64_59_no_dsp_1_U7 dmul_64ns_64ns_64_15_max_dsp_1_U5 dmul_64ns_64ns_64_15_max_dsp_1_U6 temp1_U temp2_U tempP_U temp_U</SubModules>
+      <Resources BRAM="6" DSP="34" FF="13899" LUT="8050"/>
+      <LocalResources FF="2615" LUT="665"/>
+    </RtlModule>
+    <RtlModule CELL="inst/A_U" BINDMODULE="extendedKalmanFilter_A_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="A_ROM_AUTO_1R" DISPNAME="A_U" RTLNAME="extendedKalmanFilter_A_ROM_AUTO_1R">
+      <Resources FF="1" LUT="4"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="A_U" SOURCE="" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="A"/>
+    </RtlModule>
+    <RtlModule CELL="inst/H_U" BINDMODULE="extendedKalmanFilter_H_ROM_AUTO_1R" DEPTH="1" TYPE="resource" MODULENAME="H_ROM_AUTO_1R" DISPNAME="H_U" RTLNAME="extendedKalmanFilter_H_ROM_AUTO_1R">
+      <Resources FF="1" LUT="7"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_1p" PRAGMA="" RTLNAME="H_U" SOURCE="" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_1p" URAM="0" VARIABLE="H"/>
+    </RtlModule>
+    <RtlModule CELL="inst/K_U" BINDMODULE="extendedKalmanFilter_K_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="K_RAM_AUTO_1R1W" DISPNAME="K_U" RTLNAME="extendedKalmanFilter_K_RAM_AUTO_1R1W">
+      <Resources FF="128" LUT="136"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_s2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_s2p" PRAGMA="" RTLNAME="K_U" SOURCE="ExtendedKalmanFilter.cpp:110" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_s2p array" URAM="0" VARIABLE="K"/>
+    </RtlModule>
+    <RtlModule CELL="inst/P_U" BINDMODULE="extendedKalmanFilter_P_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="P_RAM_AUTO_1R1W" DISPNAME="P_U" RTLNAME="extendedKalmanFilter_P_RAM_AUTO_1R1W">
+      <Resources BRAM="2" LUT="276"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="P_U" SOURCE="" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p" URAM="0" VARIABLE="P"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U3" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_13_full_dsp_1" DISPNAME="dadd_64ns_64ns_64_13_full_dsp_1_U3" RTLNAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+      <Resources DSP="3" FF="936" LUT="646"/>
+      <LocalResources FF="128"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U3" SOURCE="ExtendedKalmanFilter.cpp:27" STORAGESUBTYPE="" URAM="0" VARIABLE="add2_i"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U4" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dadd_64ns_64ns_64_13_full_dsp_1" DISPNAME="dadd_64ns_64ns_64_13_full_dsp_1_U4" RTLNAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+      <Resources DSP="3" FF="936" LUT="646"/>
+      <LocalResources FF="128"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadd_64ns_64ns_64_13_full_dsp_1_U4" SOURCE="ExtendedKalmanFilter.cpp:28" STORAGESUBTYPE="" URAM="0" VARIABLE="add4_i"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U1" BINDMODULE="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dadddsub_64ns_64ns_64_13_full_dsp_1" DISPNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" RTLNAME="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1">
+      <Resources DSP="3" FF="937" LUT="972"/>
+      <LocalResources FF="129" LUT="325"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:25" STORAGESUBTYPE="" URAM="0" VARIABLE="z_pred"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_58_3" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="add"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_66_5" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:67" STORAGESUBTYPE="" URAM="0" VARIABLE="add1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_97_9" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:98" STORAGESUBTYPE="" URAM="0" VARIABLE="add2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_105_11" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:106" STORAGESUBTYPE="" URAM="0" VARIABLE="add3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_115_13" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:116" STORAGESUBTYPE="" URAM="0" VARIABLE="add6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="y"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="unroll_line126" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="unroll_line126" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:127" STORAGESUBTYPE="" URAM="0" VARIABLE="add5"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_134_16" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:135" STORAGESUBTYPE="" URAM="0" VARIABLE="add7"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="VITIS_LOOP_140_17" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U1" SOURCE="ExtendedKalmanFilter.cpp:141" STORAGESUBTYPE="" URAM="0" VARIABLE="sub"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U2" BINDMODULE="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dadddsub_64ns_64ns_64_13_full_dsp_1" DISPNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U2" RTLNAME="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1">
+      <Resources DSP="3" FF="937" LUT="712"/>
+      <LocalResources FF="129" LUT="65"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U2" SOURCE="ExtendedKalmanFilter.cpp:26" STORAGESUBTYPE="" URAM="0" VARIABLE="z_pred_1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dadd" DSP="3" ID="" IMPL="fulldsp" LATENCY="12" LOOP="" OPTYPE="dadd" PRAGMA="" RTLNAME="dadddsub_64ns_64ns_64_13_full_dsp_1_U2" SOURCE="ExtendedKalmanFilter.cpp:78" STORAGESUBTYPE="" URAM="0" VARIABLE="y_1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/ddiv_64ns_64ns_64_59_no_dsp_1_U7" BINDMODULE="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="ddiv_64ns_64ns_64_59_no_dsp_1" DISPNAME="ddiv_64ns_64ns_64_59_no_dsp_1_U7" RTLNAME="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1">
+      <Resources FF="6162" LUT="3249"/>
+      <LocalResources FF="128"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op ddiv" DSP="0" ID="" IMPL="fabric" LATENCY="58" LOOP="VITIS_LOOP_121_14" OPTYPE="ddiv" PRAGMA="" RTLNAME="ddiv_64ns_64ns_64_59_no_dsp_1_U7" SOURCE="ExtendedKalmanFilter.cpp:122" STORAGESUBTYPE="" URAM="0" VARIABLE="div"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U5" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_15_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_15_max_dsp_1_U5" RTLNAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+      <Resources DSP="11" FF="559" LUT="229"/>
+      <LocalResources FF="128" LUT="2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_58_3" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U5" SOURCE="ExtendedKalmanFilter.cpp:59" STORAGESUBTYPE="" URAM="0" VARIABLE="mul"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_66_5" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U5" SOURCE="ExtendedKalmanFilter.cpp:67" STORAGESUBTYPE="" URAM="0" VARIABLE="mul1"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_97_9" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U5" SOURCE="ExtendedKalmanFilter.cpp:98" STORAGESUBTYPE="" URAM="0" VARIABLE="mul2"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_105_11" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U5" SOURCE="ExtendedKalmanFilter.cpp:106" STORAGESUBTYPE="" URAM="0" VARIABLE="mul3"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_115_13" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U5" SOURCE="ExtendedKalmanFilter.cpp:116" STORAGESUBTYPE="" URAM="0" VARIABLE="mul6"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="unroll_line126" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U5" SOURCE="ExtendedKalmanFilter.cpp:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul4"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="VITIS_LOOP_134_16" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U5" SOURCE="ExtendedKalmanFilter.cpp:135" STORAGESUBTYPE="" URAM="0" VARIABLE="mul7"/>
+    </RtlModule>
+    <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U6" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" TYPE="resource" MODULENAME="dmul_64ns_64ns_64_15_max_dsp_1" DISPNAME="dmul_64ns_64ns_64_15_max_dsp_1_U6" RTLNAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+      <Resources DSP="11" FF="559" LUT="227"/>
+      <LocalResources FF="128"/>
+      <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op dmul" DSP="11" ID="" IMPL="maxdsp" LATENCY="14" LOOP="unroll_line126" OPTYPE="dmul" PRAGMA="" RTLNAME="dmul_64ns_64ns_64_15_max_dsp_1_U6" SOURCE="ExtendedKalmanFilter.cpp:127" STORAGESUBTYPE="" URAM="0" VARIABLE="mul5"/>
+    </RtlModule>
+    <RtlModule CELL="inst/temp1_U" BINDMODULE="extendedKalmanFilter_temp_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="temp_RAM_AUTO_1R1W" DISPNAME="temp1_U" RTLNAME="extendedKalmanFilter_temp_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="69"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp1_U" SOURCE="ExtendedKalmanFilter.cpp:111" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp1"/>
+    </RtlModule>
+    <RtlModule CELL="inst/temp2_U" BINDMODULE="extendedKalmanFilter_tempP_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="tempP_RAM_AUTO_1R1W" DISPNAME="temp2_U" RTLNAME="extendedKalmanFilter_tempP_RAM_AUTO_1R1W">
+      <Resources BRAM="2" LUT="69"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp2_U" SOURCE="ExtendedKalmanFilter.cpp:130" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp2"/>
+    </RtlModule>
+    <RtlModule CELL="inst/tempP_U" BINDMODULE="extendedKalmanFilter_tempP_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="tempP_RAM_AUTO_1R1W" DISPNAME="tempP_U" RTLNAME="extendedKalmanFilter_tempP_RAM_AUTO_1R1W">
+      <Resources BRAM="2" LUT="74"/>
+      <BindNode BINDTYPE="storage" BRAM="2" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="tempP_U" SOURCE="ExtendedKalmanFilter.cpp:54" STORAGESIZE="64 16 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="tempP"/>
+    </RtlModule>
+    <RtlModule CELL="inst/temp_U" BINDMODULE="extendedKalmanFilter_temp_RAM_AUTO_1R1W" DEPTH="1" TYPE="resource" MODULENAME="temp_RAM_AUTO_1R1W" DISPNAME="temp_U" RTLNAME="extendedKalmanFilter_temp_RAM_AUTO_1R1W">
+      <Resources FF="64" LUT="69"/>
+      <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="temp_U" SOURCE="ExtendedKalmanFilter.cpp:93" STORAGESIZE="64 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="temp"/>
+    </RtlModule>
+  </RtlModules>
+  <TimingPaths>
+    <TPATH DATAPATH_DELAY="2.499" DATAPATH_LOGIC_DELAY="0.511" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.137" STARTPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.499" DATAPATH_LOGIC_DELAY="0.511" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[53]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.137" STARTPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.499" DATAPATH_LOGIC_DELAY="0.511" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.137" STARTPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.499" DATAPATH_LOGIC_DELAY="0.511" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[55]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.137" STARTPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[55]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    </TPATH>
+    <TPATH DATAPATH_DELAY="2.499" DATAPATH_LOGIC_DELAY="0.511" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.137" STARTPOINT_PIN="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+      <CELL NAME="i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    </TPATH>
+  </TimingPaths>
+  <VivadoReportFiles>
+    <ReportFile TYPE="design_analysis" PATH="verilog/report/extendedKalmanFilter_design_analysis_synth.rpt"/>
+    <ReportFile TYPE="failfast" PATH="verilog/report/extendedKalmanFilter_failfast_synth.rpt"/>
+    <ReportFile TYPE="timing" PATH="verilog/report/extendedKalmanFilter_timing_synth.rpt"/>
+    <ReportFile TYPE="timing_paths" PATH="verilog/report/extendedKalmanFilter_timing_paths_synth.rpt"/>
+    <ReportFile TYPE="utilization" PATH="verilog/report/extendedKalmanFilter_utilization_synth.rpt"/>
+    <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/extendedKalmanFilter_utilization_hierarchical_synth.rpt"/>
+  </VivadoReportFiles>
+  <GeneralInfo NAME="General Information">
+    <item NAME="Date" VALUE="Sun Mar 17 15:51:34 -0700 2024"/>
+    <item NAME="Version" VALUE="2023.2 (Build 4023990 on Oct 11 2023)"/>
+    <item NAME="Project" VALUE="ExtendedKalmanFilter"/>
+    <item NAME="Solution" VALUE="solution1 (Vivado IP Flow Target)"/>
+    <item NAME="Product family" VALUE="kintex7"/>
+    <item NAME="Target device" VALUE="xc7k160t-fbg676-2"/>
+  </GeneralInfo>
+  <RunOptions NAME="Run Constraints &amp; Options">
+    <General NAME="Design Constraints &amp; Options">
+      <item NAME="RTL Synthesis target clock" VALUE="4 ns"/>
+      <item NAME="C-Synthesis target clock" VALUE="4 ns"/>
+      <item NAME="C-Synthesis uncertainty" VALUE="27%"/>
+      <item NAME="config_export -ip_xdc_file" VALUE=""/>
+      <item NAME="config_export -ip_xdc_ooc_file" VALUE=""/>
+    </General>
+    <Syn NAME="RTL Synthesis Options">
+      <item NAME="config_export -vivado_synth_strategy" VALUE="default"/>
+      <item NAME="config_export -vivado_synth_design_args" VALUE="-directive sdx_optimization_effort_high"/>
+    </Syn>
+    <Reporting NAME="Reporting Options">
+      <item NAME="config_export -vivado_report_level" VALUE="2"/>
+      <item NAME="config_export -vivado_max_timing_paths" VALUE="10"/>
+    </Reporting>
+  </RunOptions>
+</profile>
+

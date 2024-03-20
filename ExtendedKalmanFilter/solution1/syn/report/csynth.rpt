@@ -1,0 +1,218 @@
+
+
+================================================================
+== Synthesis Summary Report of 'extendedKalmanFilter'
+================================================================
++ General Information: 
+    * Date:           Sun Mar 17 15:39:13 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        ExtendedKalmanFilter
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: kintex7
+    * Target device:  xc7k160t-fbg676-2
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +------------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    |         Modules        |  Issue |       | Latency |  Latency  | Iteration|         | Trip |          |        |         |           |           |     |
+    |         & Loops        |  Type  | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM  |   DSP   |     FF    |    LUT    | URAM|
+    +------------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+    |+ extendedKalmanFilter  |  Timing|  -0.42|     8619|  3.448e+04|         -|     8620|     -|        no|  8 (1%)|  34 (5%)|  8567 (4%)|  8068 (7%)|    -|
+    | o unroll_line55        |       -|   2.92|     2040|  8.160e+03|       510|        -|     4|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_56_2     |       -|   2.92|      508|  2.032e+03|       127|        -|     4|        no|       -|        -|          -|          -|    -|
+    |   o VITIS_LOOP_58_3    |       -|   2.92|      124|    496.000|        31|        -|     4|        no|       -|        -|          -|          -|    -|
+    | o unroll_line63        |       -|   2.92|     2040|  8.160e+03|       510|        -|     4|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_64_4     |       -|   2.92|      508|  2.032e+03|       127|        -|     4|        no|       -|        -|          -|          -|    -|
+    |   o VITIS_LOOP_66_5    |       -|   2.92|      124|    496.000|        31|        -|     4|        no|       -|        -|          -|          -|    -|
+    | o unroll_line88        |       -|   2.92|        8|     32.000|         4|        -|     2|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_89_7     |       -|   2.92|        2|      8.000|         1|        -|     2|        no|       -|        -|          -|          -|    -|
+    | o unroll_line94        |       -|   2.92|     1012|  4.048e+03|       506|        -|     2|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_95_8     |       -|   2.92|      504|  2.016e+03|       126|        -|     4|        no|       -|        -|          -|          -|    -|
+    |   o VITIS_LOOP_97_9    |       -|   2.92|      124|    496.000|        31|        -|     4|        no|       -|        -|          -|          -|    -|
+    | o unroll_line102       |       -|   2.92|      492|  1.968e+03|       246|        -|     2|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_103_10   |       -|   2.92|      244|    976.000|       122|        -|     2|        no|       -|        -|          -|          -|    -|
+    |   o VITIS_LOOP_105_11  |       -|   2.92|      120|    480.000|        30|        -|     4|        no|       -|        -|          -|          -|    -|
+    | o unroll_line112       |       -|   2.92|     1016|  4.064e+03|       254|        -|     4|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_113_12   |       -|   2.92|      252|  1.008e+03|       126|        -|     2|        no|       -|        -|          -|          -|    -|
+    |   o VITIS_LOOP_115_13  |       -|   2.92|      124|    496.000|        31|        -|     4|        no|       -|        -|          -|          -|    -|
+    | o unroll_line120       |       -|   2.92|      504|  2.016e+03|       126|        -|     4|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_121_14   |       -|   2.92|      124|    496.000|        62|        -|     2|        no|       -|        -|          -|          -|    -|
+    | o unroll_line126       |       -|   2.92|      176|    704.000|        44|        -|     4|        no|       -|        -|          -|          -|    -|
+    | o unroll_line131       |       -|   2.92|     1016|  4.064e+03|       254|        -|     4|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_132_15   |       -|   2.92|      252|  1.008e+03|        63|        -|     4|        no|       -|        -|          -|          -|    -|
+    |   o VITIS_LOOP_134_16  |       -|   2.92|       60|    240.000|        30|        -|     2|        no|       -|        -|          -|          -|    -|
+    | o unroll_line139       |       -|   2.92|      280|  1.120e+03|        70|        -|     4|        no|       -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_140_17   |       -|   2.92|       68|    272.000|        17|        -|     4|        no|       -|        -|          -|          -|    -|
+    +------------------------+--------+-------+---------+-----------+----------+---------+------+----------+--------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------------------+---------+-----------+----------+
+| Port                   | Mode    | Direction | Bitwidth |
++------------------------+---------+-----------+----------+
+| gps_measurement_data_0 | ap_none | in        | 64       |
+| gps_measurement_data_1 | ap_none | in        | 64       |
+| output_predict_data_0  | ap_vld  | out       | 64       |
+| output_predict_data_1  | ap_vld  | out       | 64       |
++------------------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------------------+-----------+----------+
+| Argument             | Direction | Datatype |
++----------------------+-----------+----------+
+| gps_measurement_data | in        | double*  |
+| output_predict_data  | out       | double*  |
++----------------------+-----------+----------+
+
+* SW-to-HW Mapping
++----------------------+------------------------------+---------+
+| Argument             | HW Interface                 | HW Type |
++----------------------+------------------------------+---------+
+| gps_measurement_data | gps_measurement_data_0       | port    |
+| gps_measurement_data | gps_measurement_data_1       | port    |
+| output_predict_data  | output_predict_data_0        | port    |
+| output_predict_data  | output_predict_data_0_ap_vld | port    |
+| output_predict_data  | output_predict_data_1        | port    |
+| output_predict_data  | output_predict_data_1_ap_vld | port    |
++----------------------+------------------------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++------------------------------------------+-----+--------+-------------+------+---------+---------+
+| Name                                     | DSP | Pragma | Variable    | Op   | Impl    | Latency |
++------------------------------------------+-----+--------+-------------+------+---------+---------+
+| + extendedKalmanFilter                   | 34  |        |             |      |         |         |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | z_pred      | dadd | fulldsp | 12      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U2 | 3   |        | z_pred_1    | dadd | fulldsp | 12      |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U3     | 3   |        | add2_i      | dadd | fulldsp | 12      |
+|   dadd_64ns_64ns_64_13_full_dsp_1_U4     | 3   |        | add4_i      | dadd | fulldsp | 12      |
+|   add_ln55_fu_869_p2                     |     |        | add_ln55    | add  | fabric  | 0       |
+|   add_ln56_fu_894_p2                     |     |        | add_ln56    | add  | fabric  | 0       |
+|   add_ln57_fu_904_p2                     |     |        | add_ln57    | add  | fabric  | 0       |
+|   add_ln58_fu_928_p2                     |     |        | add_ln58    | add  | fabric  | 0       |
+|   add_ln59_fu_938_p2                     |     |        | add_ln59    | add  | fabric  | 0       |
+|   add_ln59_1_fu_951_p2                   |     |        | add_ln59_1  | add  | fabric  | 0       |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U5      | 11  |        | mul         | dmul | maxdsp  | 14      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | add         | dadd | fulldsp | 12      |
+|   add_ln63_fu_977_p2                     |     |        | add_ln63    | add  | fabric  | 0       |
+|   add_ln64_fu_1016_p2                    |     |        | add_ln64    | add  | fabric  | 0       |
+|   add_ln65_fu_1034_p2                    |     |        | add_ln65    | add  | fabric  | 0       |
+|   add_ln66_fu_1054_p2                    |     |        | add_ln66    | add  | fabric  | 0       |
+|   add_ln67_fu_1064_p2                    |     |        | add_ln67    | add  | fabric  | 0       |
+|   add_ln67_1_fu_1069_p2                  |     |        | add_ln67_1  | add  | fabric  | 0       |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U5      | 11  |        | mul1        | dmul | maxdsp  | 14      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | add1        | dadd | fulldsp | 12      |
+|   add_ln88_fu_1091_p2                    |     |        | add_ln88    | add  | fabric  | 0       |
+|   add_ln89_fu_1112_p2                    |     |        | add_ln89    | add  | fabric  | 0       |
+|   add_ln94_fu_1192_p2                    |     |        | add_ln94    | add  | fabric  | 0       |
+|   add_ln95_fu_1225_p2                    |     |        | add_ln95    | add  | fabric  | 0       |
+|   add_ln96_fu_1235_p2                    |     |        | add_ln96    | add  | fabric  | 0       |
+|   add_ln97_fu_1259_p2                    |     |        | add_ln97    | add  | fabric  | 0       |
+|   add_ln98_fu_1265_p2                    |     |        | add_ln98    | add  | fabric  | 0       |
+|   add_ln98_1_fu_1278_p2                  |     |        | add_ln98_1  | add  | fabric  | 0       |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U5      | 11  |        | mul2        | dmul | maxdsp  | 14      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | add2        | dadd | fulldsp | 12      |
+|   add_ln102_fu_1304_p2                   |     |        | add_ln102   | add  | fabric  | 0       |
+|   add_ln103_fu_1333_p2                   |     |        | add_ln103   | add  | fabric  | 0       |
+|   add_ln105_fu_1357_p2                   |     |        | add_ln105   | add  | fabric  | 0       |
+|   add_ln106_fu_1363_p2                   |     |        | add_ln106   | add  | fabric  | 0       |
+|   add_ln106_1_fu_1373_p2                 |     |        | add_ln106_1 | add  | fabric  | 0       |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U5      | 11  |        | mul3        | dmul | maxdsp  | 14      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | add3        | dadd | fulldsp | 12      |
+|   add_ln112_fu_1434_p2                   |     |        | add_ln112   | add  | fabric  | 0       |
+|   add_ln113_fu_1469_p2                   |     |        | add_ln113   | add  | fabric  | 0       |
+|   add_ln114_fu_1487_p2                   |     |        | add_ln114   | add  | fabric  | 0       |
+|   add_ln115_fu_1507_p2                   |     |        | add_ln115   | add  | fabric  | 0       |
+|   add_ln116_fu_1517_p2                   |     |        | add_ln116   | add  | fabric  | 0       |
+|   add_ln116_1_fu_1522_p2                 |     |        | add_ln116_1 | add  | fabric  | 0       |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U5      | 11  |        | mul6        | dmul | maxdsp  | 14      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | add6        | dadd | fulldsp | 12      |
+|   add_ln120_fu_1544_p2                   |     |        | add_ln120   | add  | fabric  | 0       |
+|   add_ln121_fu_1585_p2                   |     |        | add_ln121   | add  | fabric  | 0       |
+|   add_ln122_fu_1595_p2                   |     |        | add_ln122   | add  | fabric  | 0       |
+|   ddiv_64ns_64ns_64_59_no_dsp_1_U7       |     |        | div         | ddiv | fabric  | 58      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | y           | dadd | fulldsp | 12      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U2 | 3   |        | y_1         | dadd | fulldsp | 12      |
+|   add_ln126_fu_1633_p2                   |     |        | add_ln126   | add  | fabric  | 0       |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U5      | 11  |        | mul4        | dmul | maxdsp  | 14      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | add4        | dadd | fulldsp | 12      |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U6      | 11  |        | mul5        | dmul | maxdsp  | 14      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | add5        | dadd | fulldsp | 12      |
+|   add_ln131_fu_1778_p2                   |     |        | add_ln131   | add  | fabric  | 0       |
+|   add_ln132_fu_1809_p2                   |     |        | add_ln132   | add  | fabric  | 0       |
+|   add_ln133_fu_1819_p2                   |     |        | add_ln133   | add  | fabric  | 0       |
+|   add_ln134_fu_1843_p2                   |     |        | add_ln134   | add  | fabric  | 0       |
+|   add_ln135_fu_1861_p2                   |     |        | add_ln135   | add  | fabric  | 0       |
+|   add_ln135_1_fu_1872_p2                 |     |        | add_ln135_1 | add  | fabric  | 0       |
+|   dmul_64ns_64ns_64_15_max_dsp_1_U5      | 11  |        | mul7        | dmul | maxdsp  | 14      |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | add7        | dadd | fulldsp | 12      |
+|   add_ln139_fu_1895_p2                   |     |        | add_ln139   | add  | fabric  | 0       |
+|   add_ln140_fu_1915_p2                   |     |        | add_ln140   | add  | fabric  | 0       |
+|   add_ln141_fu_1925_p2                   |     |        | add_ln141   | add  | fabric  | 0       |
+|   dadddsub_64ns_64ns_64_13_full_dsp_1_U1 | 3   |        | sub         | dadd | fulldsp | 12      |
++------------------------------------------+-----+--------+-------------+------+---------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++------------------------+---------------+------+------+------+--------+----------+------+---------+------------------+
+| Name                   | Usage         | Type | BRAM | URAM | Pragma | Variable | Impl | Latency | Bitwidth, Depth, |
+|                        |               |      |      |      |        |          |      |         | Banks            |
++------------------------+---------------+------+------+------+--------+----------+------+---------+------------------+
+| + extendedKalmanFilter |               |      | 8    | 0    |        |          |      |         |                  |
+|   tempP_U              | ram_1p array  |      | 2    |      |        | tempP    | auto | 1       | 64, 16, 1        |
+|   temp_U               | ram_1p array  |      |      |      |        | temp     | auto | 1       | 64, 8, 1         |
+|   K_U                  | ram_s2p array |      |      |      |        | K        | auto | 1       | 64, 8, 1         |
+|   temp1_U              | ram_1p array  |      |      |      |        | temp1    | auto | 1       | 64, 8, 1         |
+|   temp2_U              | ram_1p array  |      | 2    |      |        | temp2    | auto | 1       | 64, 16, 1        |
+|   A_U                  | rom_1p        |      | 2    |      |        | A        | auto | 1       | 64, 16, 1        |
+|   P_U                  | ram_1p        |      | 2    |      |        | P        | auto | 1       | 64, 16, 1        |
+|   H_U                  | rom_1p        |      |      |      |        | H        | auto | 1       | 64, 8, 1         |
++------------------------+---------------+------+------+------+--------+----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+---------------------------------------------+---------------------------------------------------------------------------+
+| Type            | Options                                     | Location                                                                  |
++-----------------+---------------------------------------------+---------------------------------------------------------------------------+
+| array_partition | variable=gps_measurement_data type=complete | ExtendedKalmanFilter.cpp:40 in extendedkalmanfilter, gps_measurement_data |
+| array_partition | variable=output_predict_data type=complete  | ExtendedKalmanFilter.cpp:41 in extendedkalmanfilter, output_predict_data  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:8 in extendedkalmanfilter   |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:9 in extendedkalmanfilter   |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:10 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:11 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:12 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:13 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:14 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:15 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:16 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:17 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:18 in extendedkalmanfilter  |
+| unroll          | factor=1                                    | ExtendedKalmanFilter/solution1/directives.tcl:19 in extendedkalmanfilter  |
++-----------------+---------------------------------------------+---------------------------------------------------------------------------+
+
+

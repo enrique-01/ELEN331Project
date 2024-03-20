@@ -1,0 +1,70 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="extendedKalmanFilter" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="extendedKalmanFilter"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line47" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line55" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line63" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line81" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line88" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line94" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line102" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line112" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line120" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line126" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line131" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="extendedKalmanFilter" label="unroll_line139" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="1"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

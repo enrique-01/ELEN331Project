@@ -1,0 +1,567 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2023.2</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>4.000</TargetClockPeriod>
+  <AchievedClockPeriod>3.052</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>3.052</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>3.052</CP_SYNTH>
+  <CP_TARGET>4.000</CP_TARGET>
+  <SLACK_FINAL>0.948</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>0.948</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>1.163</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>1.163</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>2</BRAM>
+    <CLB>0</CLB>
+    <DSP>326</DSP>
+    <FF>73805</FF>
+    <LATCH>0</LATCH>
+    <LUT>45336</LUT>
+    <SRL>2950</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>650</BRAM>
+    <CLB>0</CLB>
+    <DSP>600</DSP>
+    <FF>202800</FF>
+    <LUT>101400</LUT>
+    <URAM>0</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="extendedKalmanFilter" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="59">dadd_64ns_64ns_64_13_full_dsp_1_U489 dadd_64ns_64ns_64_13_full_dsp_1_U490 dadd_64ns_64ns_64_13_full_dsp_1_U493 dadd_64ns_64ns_64_13_full_dsp_1_U494 dadd_64ns_64ns_64_13_full_dsp_1_U495 dadd_64ns_64ns_64_13_full_dsp_1_U496 dadd_64ns_64ns_64_13_full_dsp_1_U501 dadd_64ns_64ns_64_13_full_dsp_1_U502 dadd_64ns_64ns_64_13_full_dsp_1_U503 dadd_64ns_64ns_64_13_full_dsp_1_U507 dadd_64ns_64ns_64_13_full_dsp_1_U508 dadd_64ns_64ns_64_13_full_dsp_1_U509 dadd_64ns_64ns_64_13_full_dsp_1_U510 dadd_64ns_64ns_64_13_full_dsp_1_U514 dadd_64ns_64ns_64_13_full_dsp_1_U515 dadd_64ns_64ns_64_13_full_dsp_1_U516 dadd_64ns_64ns_64_13_full_dsp_1_U517 dadddsub_64ns_64ns_64_13_full_dsp_1_U500 dmul_64ns_64ns_64_15_max_dsp_1_U497 dmul_64ns_64ns_64_15_max_dsp_1_U498 dmul_64ns_64ns_64_15_max_dsp_1_U499 dmul_64ns_64ns_64_15_max_dsp_1_U504 dmul_64ns_64ns_64_15_max_dsp_1_U505 dmul_64ns_64ns_64_15_max_dsp_1_U506 dmul_64ns_64ns_64_15_max_dsp_1_U511 dmul_64ns_64ns_64_15_max_dsp_1_U512 dmul_64ns_64ns_64_15_max_dsp_1_U513 dmul_64ns_64ns_64_15_max_dsp_1_U518 dmul_64ns_64ns_64_15_max_dsp_1_U519 dmul_64ns_64ns_64_15_max_dsp_1_U520 dmul_64ns_64ns_64_15_max_dsp_1_U521 dmul_64ns_64ns_64_15_max_dsp_1_U522 dmul_64ns_64ns_64_15_max_dsp_1_U523 dmul_64ns_64ns_64_15_max_dsp_1_U524 dsub_64ns_64ns_64_13_full_dsp_1_U491 dsub_64ns_64ns_64_13_full_dsp_1_U492 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24_fu_716 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485 grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480 temp2_U</SubModules>
+    <Resources BRAM="2" DSP="326" FF="73805" LUT="45336" LogicLUT="42386" RAMB36="1" SRL="2950"/>
+    <LocalResources FF="2834" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U489" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="1001" LUT="846" LogicLUT="821" SRL="25"/>
+    <LocalResources FF="193" LUT="65" LogicLUT="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U490" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="1000" LUT="845" LogicLUT="820" SRL="25"/>
+    <LocalResources FF="192" LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U493" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U494" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U495" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U496" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U501" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="646" LogicLUT="621" SRL="25"/>
+    <LocalResources FF="128" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U502" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="647" LogicLUT="622" SRL="25"/>
+    <LocalResources FF="128" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U503" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U507" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="651" LogicLUT="626" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U508" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="651" LogicLUT="626" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U509" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="651" LogicLUT="626" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U510" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U514" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U515" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U516" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadd_64ns_64ns_64_13_full_dsp_1_U517" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dadddsub_64ns_64ns_64_13_full_dsp_1_U500" BINDMODULE="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dadddsub_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="937" LUT="1160" LogicLUT="1135" SRL="25"/>
+    <LocalResources FF="129" LUT="2" LogicLUT="2"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U497" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U498" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U499" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U504" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="559" LUT="228" LogicLUT="103" SRL="125"/>
+    <LocalResources FF="128" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U505" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="161" LogicLUT="89" SRL="72"/>
+    <LocalResources FF="65" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U506" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="161" LogicLUT="89" SRL="72"/>
+    <LocalResources FF="65" LUT="1" LogicLUT="1"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U511" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U512" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="162" LogicLUT="90" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U513" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="162" LogicLUT="90" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U518" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U519" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U520" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U521" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U522" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U523" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dmul_64ns_64ns_64_15_max_dsp_1_U524" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="409" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="65"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dsub_64ns_64ns_64_13_full_dsp_1_U491" BINDMODULE="extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="1000" LUT="686" LogicLUT="661" SRL="25"/>
+    <LocalResources FF="192" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/dsub_64ns_64ns_64_13_full_dsp_1_U492" BINDMODULE="extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_dsub_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="1001" LUT="688" LogicLUT="663" SRL="25"/>
+    <LocalResources FF="193" LUT="34" LogicLUT="34"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148">
+    <SubModules count="4">flow_control_loop_pipe_sequential_init_U sparsemux_9_2_64_1_1_U280 sparsemux_9_2_64_1_1_U281 sparsemux_9_2_64_1_1_U282</SubModules>
+    <Resources FF="595" LUT="377" LogicLUT="366" SRL="11"/>
+    <LocalResources FF="593" LUT="176" LogicLUT="165" SRL="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610/sparsemux_9_2_64_1_1_U280" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610/sparsemux_9_2_64_1_1_U281" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148_fu_610/sparsemux_9_2_64_1_1_U282" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_148.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14">
+    <SubModules count="4">flow_control_loop_pipe_sequential_init_U sparsemux_9_2_64_1_1_U249 sparsemux_9_2_64_1_1_U250 sparsemux_9_2_64_1_1_U251</SubModules>
+    <Resources FF="595" LUT="566" LogicLUT="556" SRL="10"/>
+    <LocalResources FF="593" LUT="335" LogicLUT="325" SRL="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="39" LogicLUT="39"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586/sparsemux_9_2_64_1_1_U249" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586/sparsemux_9_2_64_1_1_U250" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14_fu_586/sparsemux_9_2_64_1_1_U251" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_101_14.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="203" LUT="209" LogicLUT="200" SRL="9"/>
+    <LocalResources FF="201" LUT="149" LogicLUT="140" SRL="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179_fu_684/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_179.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="60" LogicLUT="60"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="330" LUT="203" LogicLUT="194" SRL="9"/>
+    <LocalResources FF="328" LUT="171" LogicLUT="162" SRL="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17_fu_674/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_110_17.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="32" LogicLUT="32"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="267" LUT="145" LogicLUT="136" SRL="9"/>
+    <LocalResources FF="265" LUT="140" LogicLUT="131" SRL="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010_fu_644/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2010.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="246" LUT="105" LogicLUT="96" SRL="9"/>
+    <LocalResources FF="244" LUT="100" LogicLUT="91" SRL="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011_fu_654/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2011.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012">
+    <SubModules count="7">dadd_64ns_64ns_64_13_full_dsp_1_U373 dadd_64ns_64ns_64_13_full_dsp_1_U374 dadd_64ns_64ns_64_13_full_dsp_1_U375 dadd_64ns_64ns_64_13_full_dsp_1_U376 dmul_64ns_64ns_64_15_max_dsp_1_U379 dmul_64ns_64ns_64_15_max_dsp_1_U380 flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources DSP="34" FF="4954" LUT="2852" LogicLUT="2600" SRL="252"/>
+    <LocalResources FF="393" LUT="14" LogicLUT="5" SRL="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664/dadd_64ns_64ns_64_13_full_dsp_1_U373" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="807" LUT="600" LogicLUT="576" SRL="24"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664/dadd_64ns_64ns_64_13_full_dsp_1_U374" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664/dadd_64ns_64ns_64_13_full_dsp_1_U375" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664/dadd_64ns_64ns_64_13_full_dsp_1_U376" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664/dmul_64ns_64ns_64_15_max_dsp_1_U379" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="472" LUT="149" LogicLUT="77" SRL="72"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664/dmul_64ns_64ns_64_15_max_dsp_1_U380" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="472" LUT="149" LogicLUT="77" SRL="72"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012_fu_664/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_2012.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20">
+    <SubModules count="9">dadd_64ns_64ns_64_13_full_dsp_1_U331 dadd_64ns_64ns_64_13_full_dsp_1_U332 dadd_64ns_64ns_64_13_full_dsp_1_U333 dadd_64ns_64ns_64_13_full_dsp_1_U334 dmul_64ns_64ns_64_15_max_dsp_1_U335 dmul_64ns_64ns_64_15_max_dsp_1_U336 dmul_64ns_64ns_64_15_max_dsp_1_U337 dmul_64ns_64ns_64_15_max_dsp_1_U338 flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources DSP="56" FF="5899" LUT="3170" LogicLUT="2774" SRL="396"/>
+    <LocalResources FF="393" LUT="12" LogicLUT="3" SRL="9"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/dadd_64ns_64ns_64_13_full_dsp_1_U331" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="807" LUT="600" LogicLUT="576" SRL="24"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/dadd_64ns_64ns_64_13_full_dsp_1_U332" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/dadd_64ns_64ns_64_13_full_dsp_1_U333" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/dadd_64ns_64ns_64_13_full_dsp_1_U334" BINDMODULE="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1">
+    <Resources DSP="3" FF="936" LUT="645" LogicLUT="620" SRL="25"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/dmul_64ns_64ns_64_15_max_dsp_1_U335" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="473" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="129"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/dmul_64ns_64ns_64_15_max_dsp_1_U336" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="472" LUT="160" LogicLUT="88" SRL="72"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/dmul_64ns_64ns_64_15_max_dsp_1_U337" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="472" LUT="149" LogicLUT="77" SRL="72"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/dmul_64ns_64ns_64_15_max_dsp_1_U338" BINDMODULE="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_dmul_64ns_64ns_64_15_max_dsp_1">
+    <Resources DSP="11" FF="472" LUT="149" LogicLUT="77" SRL="72"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20_fu_634/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_121_20.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22">
+    <SubModules count="5">ddiv_64ns_64ns_64_59_no_dsp_1_U387 ddiv_64ns_64ns_64_59_no_dsp_1_U388 ddiv_64ns_64ns_64_59_no_dsp_1_U389 ddiv_64ns_64ns_64_59_no_dsp_1_U390 flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="25555" LUT="13399" LogicLUT="12973" SRL="426"/>
+    <LocalResources FF="1032" LUT="137" LogicLUT="131" SRL="6"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ddiv_64ns_64ns_64_59_no_dsp_1_U387" BINDMODULE="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22.v" ORIG_REF_NAME="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1">
+    <Resources FF="6098" LUT="3249" LogicLUT="3144" SRL="105"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ddiv_64ns_64ns_64_59_no_dsp_1_U388" BINDMODULE="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22.v" ORIG_REF_NAME="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1">
+    <Resources FF="6098" LUT="3249" LogicLUT="3144" SRL="105"/>
+    <LocalResources FF="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ddiv_64ns_64ns_64_59_no_dsp_1_U389" BINDMODULE="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22.v" ORIG_REF_NAME="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1">
+    <Resources FF="6162" LUT="3249" LogicLUT="3144" SRL="105"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/ddiv_64ns_64ns_64_59_no_dsp_1_U390" BINDMODULE="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22.v" ORIG_REF_NAME="extendedKalmanFilter_ddiv_64ns_64ns_64_59_no_dsp_1">
+    <Resources FF="6162" LUT="3249" LogicLUT="3144" SRL="105"/>
+    <LocalResources FF="128"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22_fu_694/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_128_22.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="3" LUT="266" LogicLUT="266"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24_fu_716" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="681" LUT="990" LogicLUT="990"/>
+    <LocalResources FF="679" LUT="464" LogicLUT="464"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24_fu_716/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="526" LogicLUT="526"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="222" LUT="45" LogicLUT="32" SRL="13"/>
+    <LocalResources FF="220" LUT="18" LogicLUT="5" SRL="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26_fu_742/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="27" LogicLUT="27"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29">
+    <SubModules count="6">flow_control_loop_pipe_sequential_init_U sparsemux_9_2_64_1_1_U451 sparsemux_9_2_64_1_1_U452 sparsemux_9_2_64_1_1_U453 sparsemux_9_2_64_1_1_U454 sparsemux_9_2_64_1_1_U455</SubModules>
+    <Resources FF="1201" LUT="1930" LogicLUT="1930"/>
+    <LocalResources FF="1199" LUT="562" LogicLUT="562"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="1048" LogicLUT="1048"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755/sparsemux_9_2_64_1_1_U451" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755/sparsemux_9_2_64_1_1_U452" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755/sparsemux_9_2_64_1_1_U453" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755/sparsemux_9_2_64_1_1_U454" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29_fu_755/sparsemux_9_2_64_1_1_U455" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_148_28_VITIS_LOOP_149_29.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41">
+    <SubModules count="4">flow_control_loop_pipe_sequential_init_U sparsemux_9_2_64_1_1_U41 sparsemux_9_2_64_1_1_U42 sparsemux_9_2_64_1_1_U43</SubModules>
+    <Resources FF="595" LUT="695" LogicLUT="684" SRL="11"/>
+    <LocalResources FF="593" LUT="432" LogicLUT="421" SRL="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="71" LogicLUT="71"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408/sparsemux_9_2_64_1_1_U41" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408/sparsemux_9_2_64_1_1_U42" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41_fu_408/sparsemux_9_2_64_1_1_U43" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_41.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42">
+    <SubModules count="4">flow_control_loop_pipe_sequential_init_U sparsemux_9_2_64_1_1_U72 sparsemux_9_2_64_1_1_U73 sparsemux_9_2_64_1_1_U74</SubModules>
+    <Resources FF="531" LUT="407" LogicLUT="396" SRL="11"/>
+    <LocalResources FF="529" LUT="144" LogicLUT="133" SRL="11"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="71" LogicLUT="71"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432/sparsemux_9_2_64_1_1_U72" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432/sparsemux_9_2_64_1_1_U73" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42_fu_432/sparsemux_9_2_64_1_1_U74" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_42.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43">
+    <SubModules count="4">flow_control_loop_pipe_sequential_init_U sparsemux_9_2_64_1_1_U103 sparsemux_9_2_64_1_1_U104 sparsemux_9_2_64_1_1_U105</SubModules>
+    <Resources FF="657" LUT="506" LogicLUT="493" SRL="13"/>
+    <LocalResources FF="655" LUT="243" LogicLUT="230" SRL="13"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="71" LogicLUT="71"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/sparsemux_9_2_64_1_1_U103" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/sparsemux_9_2_64_1_1_U104" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43_fu_456/sparsemux_9_2_64_1_1_U105" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_43.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4">
+    <SubModules count="4">flow_control_loop_pipe_sequential_init_U sparsemux_9_2_64_1_1_U10 sparsemux_9_2_64_1_1_U11 sparsemux_9_2_64_1_1_U9</SubModules>
+    <Resources FF="851" LUT="605" LogicLUT="595" SRL="10"/>
+    <LocalResources FF="849" LUT="335" LogicLUT="325" SRL="10"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="78" LogicLUT="78"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384/sparsemux_9_2_64_1_1_U10" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384/sparsemux_9_2_64_1_1_U11" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4_fu_384/sparsemux_9_2_64_1_1_U9" BINDMODULE="extendedKalmanFilter_sparsemux_9_2_64_1_1" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_58_4.v" ORIG_REF_NAME="extendedKalmanFilter_sparsemux_9_2_64_1_1">
+    <Resources LUT="64" LogicLUT="64"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="471" LUT="868" LogicLUT="854" SRL="14"/>
+    <LocalResources FF="466" LUT="568" LogicLUT="554" SRL="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74_fu_514/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_74.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="5" LUT="300" LogicLUT="300"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="406" LUT="716" LogicLUT="702" SRL="14"/>
+    <LocalResources FF="402" LUT="443" LogicLUT="429" SRL="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75_fu_538/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_75.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="4" LUT="273" LogicLUT="273"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="473" LUT="488" LogicLUT="474" SRL="14"/>
+    <LocalResources FF="469" LUT="215" LogicLUT="201" SRL="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76_fu_562/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_76.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="4" LUT="273" LogicLUT="273"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="556" LUT="491" LogicLUT="477" SRL="14"/>
+    <LocalResources FF="551" LUT="216" LogicLUT="202" SRL="14"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7_fu_490/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_67_7.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="5" LUT="275" LogicLUT="275"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="5" LUT="4" LogicLUT="4"/>
+    <LocalResources FF="3"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127_fu_485/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_127.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12">
+    <SubModules count="1">flow_control_loop_pipe_sequential_init_U</SubModules>
+    <Resources FF="5" LUT="9" LogicLUT="9"/>
+    <LocalResources FF="3" LUT="5" LogicLUT="5"/>
+  </RtlModule>
+  <RtlModule CELL="inst/grp_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12_fu_480/flow_control_loop_pipe_sequential_init_U" BINDMODULE="extendedKalmanFilter_flow_control_loop_pipe_sequential_init" DEPTH="2" FILE_NAME="extendedKalmanFilter_extendedKalmanFilter_Pipeline_VITIS_LOOP_94_12.v" ORIG_REF_NAME="extendedKalmanFilter_flow_control_loop_pipe_sequential_init">
+    <Resources FF="2" LUT="4" LogicLUT="4"/>
+  </RtlModule>
+  <RtlModule CELL="inst/temp2_U" BINDMODULE="extendedKalmanFilter_temp2_RAM_AUTO_1R1W" DEPTH="1" FILE_NAME="extendedKalmanFilter.v" ORIG_REF_NAME="extendedKalmanFilter_temp2_RAM_AUTO_1R1W">
+    <Resources BRAM="2" RAMB36="1"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="2.473" DATAPATH_LOGIC_DELAY="0.485" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.163" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.473" DATAPATH_LOGIC_DELAY="0.485" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[53]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.163" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[53]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.473" DATAPATH_LOGIC_DELAY="0.485" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.163" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[54]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.473" DATAPATH_LOGIC_DELAY="0.485" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[55]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.163" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U493/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[55]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="2.473" DATAPATH_LOGIC_DELAY="0.485" DATAPATH_NET_DELAY="1.988" ENDPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U494/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]/R" LOGIC_LEVELS="4" MAX_FANOUT="66" SLACK="1.163" STARTPOINT_PIN="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U494/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD/C">
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U494/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[5].CARRYS_DEL.NEED_DEL.CARRYS_FD" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U494/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_1/opt_has_pipe.first_q[0]_i_2__1" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U494/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[0]_i_1__15" PRIMITIVE_TYPE="LUT.others.LUT5" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U494/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[1]_i_1__6" PRIMITIVE_TYPE="LUT.others.LUT3" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U494/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/LZE/ZERO_DET_CC_2.CC/opt_has_pipe.first_q[55]_i_1__0" PRIMITIVE_TYPE="LUT.others.LUT2" LINE_NUMBER="1"/>
+    <CELL  NAME="bd_0_i/hls_inst/inst/dadd_64ns_64ns_64_13_full_dsp_1_U494/extendedKalmanFilter_dadd_64ns_64ns_64_13_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[52]" PRIMITIVE_TYPE="FLOP_LATCH.flop.FDRE" LINE_NUMBER="1"/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/extendedKalmanFilter_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/extendedKalmanFilter_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/extendedKalmanFilter_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/extendedKalmanFilter_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/extendedKalmanFilter_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/extendedKalmanFilter_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

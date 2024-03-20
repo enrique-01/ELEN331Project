@@ -1,0 +1,63 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=extendedKalmanFilter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=extendedKalmanFilter" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=gps_measurement_data type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ExtendedKalmanFilter.cpp:41:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=output_predict_data type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:8:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:12:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:13:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:14:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:15:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:17:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="C:/Users/Enrique/Desktop/ECEN331Project/ExtendedKalmanFilter/solution1/directives.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="extendedKalmanFilter" ARG_PragmaIsValid="1" ARG_PragmaOptions="factor=1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Inlining function 'stateTransition(double*)' into 'extendedKalmanFilter(double*, double*)'">
+        <args Callee="stateTransition(double*)" Callee-DebugLoc="File ExtendedKalmanFilter.cpp Line 23 Column 0" Caller="extendedKalmanFilter(double*, double*)" Caller-DebugLoc="File ExtendedKalmanFilter.cpp Line 39 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Inlining function 'measurementFunction(double*)' into 'extendedKalmanFilter(double*, double*)'">
+        <args Callee="measurementFunction(double*)" Callee-DebugLoc="File ExtendedKalmanFilter.cpp Line 32 Column 0" Caller="extendedKalmanFilter(double*, double*)" Caller-DebugLoc="File ExtendedKalmanFilter.cpp Line 39 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Applying array_partition to 'gps_measurement_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="gps_measurement_data"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ExtendedKalmanFilter.cpp:39:0" msg_body="Applying array_partition to 'output_predict_data': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="output_predict_data"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

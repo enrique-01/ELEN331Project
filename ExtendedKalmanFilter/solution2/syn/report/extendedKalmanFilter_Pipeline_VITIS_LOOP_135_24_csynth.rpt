@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vitis HLS Report for 'extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24'
+================================================================
+* Date:           Sun Mar 17 14:02:21 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        ExtendedKalmanFilter
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k160t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  2.796 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      125|      125|  0.500 us|  0.500 us|  125|  125|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_135_24  |      123|      123|        43|         27|          1|     4|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      26|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       0|      51|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       -|     317|    -|
+|Register         |        -|    -|     678|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|     678|     394|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      650|  600|  202800|  101400|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |          Instance         |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |mux_4_2_64_1_1_U414        |mux_4_2_64_1_1        |        0|   0|  0|  17|    0|
+    |sparsemux_9_2_64_1_1_U412  |sparsemux_9_2_64_1_1  |        0|   0|  0|  17|    0|
+    |sparsemux_9_2_64_1_1_U413  |sparsemux_9_2_64_1_1  |        0|   0|  0|  17|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+    |Total                      |                      |        0|   0|  0|  51|    0|
+    +---------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln135_fu_227_p2   |         +|   0|  0|  11|           3|           1|
+    |icmp_ln135_fu_221_p2  |      icmp|   0|  0|  13|           3|           4|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  26|           7|           7|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+-----+-----------+-----+-----------+
+    |             Name            | LUT | Input Size| Bits| Total Bits|
+    +-----------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                    |  139|         28|    1|         28|
+    |ap_done_int                  |    9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0      |    9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter0_reg  |    9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1      |    9|          2|    1|          2|
+    |ap_sig_allocacmp_i_1         |    9|          2|    3|          6|
+    |ap_sig_allocacmp_p_load      |    9|          2|   64|        128|
+    |ap_sig_allocacmp_p_load16    |    9|          2|   64|        128|
+    |ap_sig_allocacmp_p_load17    |    9|          2|   64|        128|
+    |ap_sig_allocacmp_p_load18    |    9|          2|   64|        128|
+    |empty_25_fu_84               |    9|          2|   64|        128|
+    |empty_26_fu_88               |    9|          2|   64|        128|
+    |empty_27_fu_92               |    9|          2|   64|        128|
+    |empty_fu_80                  |    9|          2|   64|        128|
+    |grp_fu_180_p0                |   13|          3|   64|        192|
+    |grp_fu_180_p1                |   13|          3|   64|        192|
+    |grp_fu_184_p0                |   13|          3|   64|        192|
+    |grp_fu_184_p1                |   13|          3|   64|        192|
+    |i_fu_76                      |    9|          2|    3|          6|
+    +-----------------------------+-----+-----------+-----+-----------+
+    |Total                        |  317|         68|  779|       1840|
+    +-----------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------------------+----+----+-----+-----------+
+    |                Name               | FF | LUT| Bits| Const Bits|
+    +-----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                          |  27|   0|   27|          0|
+    |ap_done_reg                        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg        |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1            |   1|   0|    1|          0|
+    |empty_25_fu_84                     |  64|   0|   64|          0|
+    |empty_26_fu_88                     |  64|   0|   64|          0|
+    |empty_27_fu_92                     |  64|   0|   64|          0|
+    |empty_fu_80                        |  64|   0|   64|          0|
+    |i_fu_76                            |   3|   0|    3|          0|
+    |icmp_ln135_reg_404                 |   1|   0|    1|          0|
+    |mul3_reg_428                       |  64|   0|   64|          0|
+    |mul4_reg_433                       |  64|   0|   64|          0|
+    |reg_188                            |  64|   0|   64|          0|
+    |tmp_23_reg_413                     |  64|   0|   64|          0|
+    |tmp_24_reg_418                     |  64|   0|   64|          0|
+    |tmp_s_reg_423                      |  64|   0|   64|          0|
+    |trunc_ln135_reg_408                |   2|   0|    2|          0|
+    |trunc_ln135_reg_408_pp0_iter1_reg  |   2|   0|    2|          0|
+    +-----------------------------------+----+----+-----+-----------+
+    |Total                              | 678|   0|  678|          0|
+    +-----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |                  Source Object                  |    C Type    |
++-------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+|ap_clk                   |   in|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|ap_rst                   |   in|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|ap_start                 |   in|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|ap_done                  |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|ap_idle                  |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|ap_ready                 |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2002_p_din0       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2002_p_din1       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2002_p_opcode     |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2002_p_dout0      |   in|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2002_p_ce         |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2018_p_din0       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2018_p_din1       |  out|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2018_p_dout0      |   in|   64|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|grp_fu_2018_p_ce         |  out|    1|  ap_ctrl_hs|  extendedKalmanFilter_Pipeline_VITIS_LOOP_135_24|  return value|
+|add4_i                   |   in|   64|     ap_none|                                           add4_i|        scalar|
+|add2_i                   |   in|   64|     ap_none|                                           add2_i|        scalar|
+|z_pred_1                 |   in|   64|     ap_none|                                         z_pred_1|        scalar|
+|z_pred                   |   in|   64|     ap_none|                                           z_pred|        scalar|
+|mux_case_0243446_reload  |   in|   64|     ap_none|                          mux_case_0243446_reload|        scalar|
+|mux_case_1245449_reload  |   in|   64|     ap_none|                          mux_case_1245449_reload|        scalar|
+|mux_case_2247452_reload  |   in|   64|     ap_none|                          mux_case_2247452_reload|        scalar|
+|mux_case_3249455_reload  |   in|   64|     ap_none|                          mux_case_3249455_reload|        scalar|
+|y                        |   in|   64|     ap_none|                                                y|        scalar|
+|mux_case_0251458_reload  |   in|   64|     ap_none|                          mux_case_0251458_reload|        scalar|
+|mux_case_1253461_reload  |   in|   64|     ap_none|                          mux_case_1253461_reload|        scalar|
+|mux_case_2255464_reload  |   in|   64|     ap_none|                          mux_case_2255464_reload|        scalar|
+|mux_case_3257467_reload  |   in|   64|     ap_none|                          mux_case_3257467_reload|        scalar|
+|y_1                      |   in|   64|     ap_none|                                              y_1|        scalar|
+|x_0                      |  out|   64|      ap_vld|                                              x_0|       pointer|
+|x_0_ap_vld               |  out|    1|      ap_vld|                                              x_0|       pointer|
+|x_1                      |  out|   64|      ap_vld|                                              x_1|       pointer|
+|x_1_ap_vld               |  out|    1|      ap_vld|                                              x_1|       pointer|
+|x_2                      |  out|   64|      ap_vld|                                              x_2|       pointer|
+|x_2_ap_vld               |  out|    1|      ap_vld|                                              x_2|       pointer|
+|x_3                      |  out|   64|      ap_vld|                                              x_3|       pointer|
+|x_3_ap_vld               |  out|    1|      ap_vld|                                              x_3|       pointer|
++-------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+

@@ -1,0 +1,556 @@
+
+
+================================================================
+== Vitis HLS Report for 'extendedKalmanFilter_Pipeline_VITIS_LOOP_140_25_VITIS_LOOP_141_26'
+================================================================
+* Date:           Sun Mar 17 14:02:09 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        ExtendedKalmanFilter
+* Solution:       solution2 (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k160t-fbg676-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  4.00 ns|  3.212 ns|     1.08 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       59|       59|  0.236 us|  0.236 us|   59|   59|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                       |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |               Loop Name               |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_140_25_VITIS_LOOP_141_26  |       57|       57|        43|          1|          1|    16|       yes|
+        +---------------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 43
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 43
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 43, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.21>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%j = alloca i32 1" [ExtendedKalmanFilter.cpp:141]   --->   Operation 46 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [ExtendedKalmanFilter.cpp:140]   --->   Operation 47 'alloca' 'i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%indvar_flatten = alloca i32 1"   --->   Operation 48 'alloca' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "%mux_case_3257467_reload_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %mux_case_3257467_reload"   --->   Operation 49 'read' 'mux_case_3257467_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%mux_case_2255464_reload_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %mux_case_2255464_reload"   --->   Operation 50 'read' 'mux_case_2255464_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%mux_case_1253461_reload_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %mux_case_1253461_reload"   --->   Operation 51 'read' 'mux_case_1253461_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%mux_case_0251458_reload_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %mux_case_0251458_reload"   --->   Operation 52 'read' 'mux_case_0251458_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%mux_case_3249455_reload_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %mux_case_3249455_reload"   --->   Operation 53 'read' 'mux_case_3249455_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%mux_case_2247452_reload_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %mux_case_2247452_reload"   --->   Operation 54 'read' 'mux_case_2247452_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%mux_case_1245449_reload_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %mux_case_1245449_reload"   --->   Operation 55 'read' 'mux_case_1245449_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%mux_case_0243446_reload_read = read i64 @_ssdm_op_Read.ap_auto.double, i64 %mux_case_0243446_reload"   --->   Operation 56 'read' 'mux_case_0243446_reload_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [1/1] (0.83ns)   --->   "%store_ln0 = store i5 0, i5 %indvar_flatten"   --->   Operation 57 'store' 'store_ln0' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 58 [1/1] (0.83ns)   --->   "%store_ln140 = store i3 0, i3 %i" [ExtendedKalmanFilter.cpp:140]   --->   Operation 58 'store' 'store_ln140' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 59 [1/1] (0.83ns)   --->   "%store_ln141 = store i3 0, i3 %j" [ExtendedKalmanFilter.cpp:141]   --->   Operation 59 'store' 'store_ln141' <Predicate = true> <Delay = 0.83>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%br_ln0 = br void %VITIS_LOOP_143_27"   --->   Operation 60 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%indvar_flatten_load = load i5 %indvar_flatten" [ExtendedKalmanFilter.cpp:140]   --->   Operation 61 'load' 'indvar_flatten_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (1.10ns)   --->   "%icmp_ln140 = icmp_eq  i5 %indvar_flatten_load, i5 16" [ExtendedKalmanFilter.cpp:140]   --->   Operation 62 'icmp' 'icmp_ln140' <Predicate = true> <Delay = 1.10> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 63 [1/1] (1.10ns)   --->   "%add_ln140_1 = add i5 %indvar_flatten_load, i5 1" [ExtendedKalmanFilter.cpp:140]   --->   Operation 63 'add' 'add_ln140_1' <Predicate = true> <Delay = 1.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln140 = br i1 %icmp_ln140, void %for.inc364, void %for.inc390.preheader.exitStub" [ExtendedKalmanFilter.cpp:140]   --->   Operation 64 'br' 'br_ln140' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "%j_load = load i3 %j" [ExtendedKalmanFilter.cpp:141]   --->   Operation 65 'load' 'j_load' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "%i_load = load i3 %i" [ExtendedKalmanFilter.cpp:140]   --->   Operation 66 'load' 'i_load' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_1 : Operation 67 [1/1] (0.93ns)   --->   "%add_ln140 = add i3 %i_load, i3 1" [ExtendedKalmanFilter.cpp:140]   --->   Operation 67 'add' 'add_ln140' <Predicate = (!icmp_ln140)> <Delay = 0.93> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 68 [1/1] (0.93ns)   --->   "%icmp_ln141 = icmp_eq  i3 %j_load, i3 4" [ExtendedKalmanFilter.cpp:141]   --->   Operation 68 'icmp' 'icmp_ln141' <Predicate = (!icmp_ln140)> <Delay = 0.93> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 69 [1/1] (0.51ns)   --->   "%select_ln140 = select i1 %icmp_ln141, i3 0, i3 %j_load" [ExtendedKalmanFilter.cpp:140]   --->   Operation 69 'select' 'select_ln140' <Predicate = (!icmp_ln140)> <Delay = 0.51> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 70 [1/1] (0.51ns)   --->   "%select_ln140_1 = select i1 %icmp_ln141, i3 %add_ln140, i3 %i_load" [ExtendedKalmanFilter.cpp:140]   --->   Operation 70 'select' 'select_ln140_1' <Predicate = (!icmp_ln140)> <Delay = 0.51> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.51> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%trunc_ln142 = trunc i3 %select_ln140_1" [ExtendedKalmanFilter.cpp:142]   --->   Operation 71 'trunc' 'trunc_ln142' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%trunc_ln141 = trunc i3 %select_ln140" [ExtendedKalmanFilter.cpp:141]   --->   Operation 72 'trunc' 'trunc_ln141' <Predicate = (!icmp_ln140)> <Delay = 0.00>
+ST_1 : Operation 73 [1/1] (0.86ns)   --->   "%tmp_19 = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.4f64.f64.i2, i2 0, i64 %mux_case_0243446_reload_read, i2 1, i64 %mux_case_1245449_reload_read, i2 2, i64 %mux_case_2247452_reload_read, i2 3, i64 %mux_case_3249455_reload_read, i64 <undef>, i2 %trunc_ln142" [ExtendedKalmanFilter.cpp:144]   --->   Operation 73 'sparsemux' 'tmp_19' <Predicate = (!icmp_ln140)> <Delay = 0.86> <CoreInst = "SparseMux">   --->   Core 135 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (0.86ns)   --->   "%tmp_20 = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.4f64.f64.i2, i2 0, i64 1, i2 1, i64 0, i2 2, i64 0, i2 3, i64 0, i64 <undef>, i2 %trunc_ln141" [ExtendedKalmanFilter.cpp:144]   --->   Operation 74 'sparsemux' 'tmp_20' <Predicate = (!icmp_ln140)> <Delay = 0.86> <CoreInst = "SparseMux">   --->   Core 135 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 75 [1/1] (0.93ns)   --->   "%add_ln141 = add i3 %select_ln140, i3 1" [ExtendedKalmanFilter.cpp:141]   --->   Operation 75 'add' 'add_ln141' <Predicate = (!icmp_ln140)> <Delay = 0.93> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.93> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 76 [1/1] (0.83ns)   --->   "%store_ln140 = store i5 %add_ln140_1, i5 %indvar_flatten" [ExtendedKalmanFilter.cpp:140]   --->   Operation 76 'store' 'store_ln140' <Predicate = (!icmp_ln140)> <Delay = 0.83>
+ST_1 : Operation 77 [1/1] (0.83ns)   --->   "%store_ln140 = store i3 %select_ln140_1, i3 %i" [ExtendedKalmanFilter.cpp:140]   --->   Operation 77 'store' 'store_ln140' <Predicate = (!icmp_ln140)> <Delay = 0.83>
+
+State 2 <SV = 1> <Delay = 2.79>
+ST_2 : Operation 78 [15/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 78 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 79 [1/1] (0.83ns)   --->   "%store_ln141 = store i3 %add_ln141, i3 %j" [ExtendedKalmanFilter.cpp:141]   --->   Operation 79 'store' 'store_ln141' <Predicate = true> <Delay = 0.83>
+
+State 3 <SV = 2> <Delay = 2.79>
+ST_3 : Operation 80 [14/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 80 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 2.79>
+ST_4 : Operation 81 [13/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 81 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 2.79>
+ST_5 : Operation 82 [12/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 82 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 2.79>
+ST_6 : Operation 83 [11/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 83 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 2.79>
+ST_7 : Operation 84 [10/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 84 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 2.79>
+ST_8 : Operation 85 [9/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 85 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 2.79>
+ST_9 : Operation 86 [8/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 86 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 2.79>
+ST_10 : Operation 87 [7/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 87 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 2.79>
+ST_11 : Operation 88 [6/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 88 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 2.79>
+ST_12 : Operation 89 [5/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 89 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 2.79>
+ST_13 : Operation 90 [4/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 90 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 2.79>
+ST_14 : Operation 91 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i4 @_ssdm_op_BitConcatenate.i4.i2.i2, i2 %trunc_ln142, i2 0" [ExtendedKalmanFilter.cpp:142]   --->   Operation 91 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 92 [1/1] (0.00ns)   --->   "%zext_ln142 = zext i3 %select_ln140" [ExtendedKalmanFilter.cpp:142]   --->   Operation 92 'zext' 'zext_ln142' <Predicate = true> <Delay = 0.00>
+ST_14 : Operation 93 [1/1] (1.01ns)   --->   "%add_ln142 = add i4 %tmp_s, i4 %zext_ln142" [ExtendedKalmanFilter.cpp:142]   --->   Operation 93 'add' 'add_ln142' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 94 [3/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 94 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 95 [1/1] (0.86ns)   --->   "%tmp_21 = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.4f64.f64.i2, i2 0, i64 %mux_case_0251458_reload_read, i2 1, i64 %mux_case_1253461_reload_read, i2 2, i64 %mux_case_2255464_reload_read, i2 3, i64 %mux_case_3257467_reload_read, i64 <undef>, i2 %trunc_ln142" [ExtendedKalmanFilter.cpp:144]   --->   Operation 95 'sparsemux' 'tmp_21' <Predicate = true> <Delay = 0.86> <CoreInst = "SparseMux">   --->   Core 135 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 96 [1/1] (0.86ns)   --->   "%tmp_22 = sparsemux i64 @_ssdm_op_SparseMux.ap_auto.4f64.f64.i2, i2 0, i64 0, i2 1, i64 1, i2 2, i64 0, i2 3, i64 0, i64 <undef>, i2 %trunc_ln141" [ExtendedKalmanFilter.cpp:144]   --->   Operation 96 'sparsemux' 'tmp_22' <Predicate = true> <Delay = 0.86> <CoreInst = "SparseMux">   --->   Core 135 'SparseMux' <Latency = 0> <II = 1> <Delay = 0.86> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 2.79>
+ST_15 : Operation 97 [2/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 97 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 98 [15/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 98 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 2.79>
+ST_16 : Operation 99 [1/15] (2.79ns)   --->   "%mul5 = dmul i64 %tmp_19, i64 %tmp_20" [ExtendedKalmanFilter.cpp:144]   --->   Operation 99 'dmul' 'mul5' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 100 [14/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 100 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 2.79>
+ST_17 : Operation 101 [13/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 101 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 102 [13/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 102 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 2.79>
+ST_18 : Operation 103 [12/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 103 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 104 [12/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 104 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 2.79>
+ST_19 : Operation 105 [11/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 105 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 106 [11/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 106 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 2.79>
+ST_20 : Operation 107 [10/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 107 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 108 [10/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 108 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 2.79>
+ST_21 : Operation 109 [9/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 109 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 110 [9/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 110 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 2.79>
+ST_22 : Operation 111 [8/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 111 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 112 [8/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 112 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 2.79>
+ST_23 : Operation 113 [7/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 113 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 114 [7/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 114 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 2.79>
+ST_24 : Operation 115 [6/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 115 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 116 [6/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 116 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 2.79>
+ST_25 : Operation 117 [5/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 117 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 118 [5/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 118 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 2.79>
+ST_26 : Operation 119 [4/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 119 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 120 [4/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 120 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 2.79>
+ST_27 : Operation 121 [3/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 121 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 122 [3/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 122 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 2.79>
+ST_28 : Operation 123 [2/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 123 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 124 [2/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 124 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 2.79>
+ST_29 : Operation 125 [1/13] (2.32ns)   --->   "%add7 = dadd i64 %mul5, i64 0" [ExtendedKalmanFilter.cpp:144]   --->   Operation 125 'dadd' 'add7' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 126 [1/15] (2.79ns)   --->   "%mul352_1 = dmul i64 %tmp_21, i64 %tmp_22" [ExtendedKalmanFilter.cpp:144]   --->   Operation 126 'dmul' 'mul352_1' <Predicate = true> <Delay = 2.79> <CoreInst = "DMul_maxdsp">   --->   Core 49 'DMul_maxdsp' <Latency = 14> <II = 1> <Delay = 2.79> <FuncUnit> <Opcode : 'dmul'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 2.32>
+ST_30 : Operation 127 [13/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 127 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 2.32>
+ST_31 : Operation 128 [12/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 128 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 2.32>
+ST_32 : Operation 129 [11/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 129 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 2.32>
+ST_33 : Operation 130 [10/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 130 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 2.32>
+ST_34 : Operation 131 [9/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 131 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 2.32>
+ST_35 : Operation 132 [8/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 132 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 2.32>
+ST_36 : Operation 133 [7/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 133 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 2.32>
+ST_37 : Operation 134 [6/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 134 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 2.32>
+ST_38 : Operation 135 [5/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 135 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 2.32>
+ST_39 : Operation 136 [4/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 136 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 2.32>
+ST_40 : Operation 137 [3/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 137 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 2.32>
+ST_41 : Operation 138 [2/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 138 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 2.32>
+ST_42 : Operation 139 [1/13] (2.32ns)   --->   "%add357_1 = dadd i64 %add7, i64 %mul352_1" [ExtendedKalmanFilter.cpp:144]   --->   Operation 139 'dadd' 'add357_1' <Predicate = true> <Delay = 2.32> <CoreInst = "DAddSub_fulldsp">   --->   Core 37 'DAddSub_fulldsp' <Latency = 12> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'dadd' 'dsub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 147 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 147 'ret' 'ret_ln0' <Predicate = (icmp_ln140)> <Delay = 0.00>
+
+State 43 <SV = 42> <Delay = 2.26>
+ST_43 : Operation 140 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_140_25_VITIS_LOOP_141_26_str"   --->   Operation 140 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 141 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 141 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 142 [1/1] (0.00ns)   --->   "%zext_ln142_1 = zext i4 %add_ln142" [ExtendedKalmanFilter.cpp:142]   --->   Operation 142 'zext' 'zext_ln142_1' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 143 [1/1] (0.00ns)   --->   "%temp2_addr = getelementptr i64 %temp2, i64 0, i64 %zext_ln142_1" [ExtendedKalmanFilter.cpp:142]   --->   Operation 143 'getelementptr' 'temp2_addr' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 144 [1/1] (0.00ns)   --->   "%specpipeline_ln141 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_8" [ExtendedKalmanFilter.cpp:141]   --->   Operation 144 'specpipeline' 'specpipeline_ln141' <Predicate = true> <Delay = 0.00>
+ST_43 : Operation 145 [1/1] (2.26ns)   --->   "%store_ln144 = store i64 %add357_1, i4 %temp2_addr" [ExtendedKalmanFilter.cpp:144]   --->   Operation 145 'store' 'store_ln144' <Predicate = true> <Delay = 2.26> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.26> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 64> <Depth = 16> <RAM>
+ST_43 : Operation 146 [1/1] (0.00ns)   --->   "%br_ln141 = br void %VITIS_LOOP_143_27" [ExtendedKalmanFilter.cpp:141]   --->   Operation 146 'br' 'br_ln141' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4.000ns, clock uncertainty: 1.080ns.
+
+ <State 1>: 3.212ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln141', ExtendedKalmanFilter.cpp:141) of constant 0 on local variable 'j', ExtendedKalmanFilter.cpp:141 [23]  (0.833 ns)
+	'load' operation 3 bit ('j_load', ExtendedKalmanFilter.cpp:141) on local variable 'j', ExtendedKalmanFilter.cpp:141 [31]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln141', ExtendedKalmanFilter.cpp:141) [36]  (0.934 ns)
+	'select' operation 3 bit ('select_ln140', ExtendedKalmanFilter.cpp:140) [37]  (0.510 ns)
+	'add' operation 3 bit ('add_ln141', ExtendedKalmanFilter.cpp:141) [56]  (0.934 ns)
+
+ <State 2>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 3>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 4>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 5>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 6>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 7>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 8>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 9>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 10>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 11>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 12>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 13>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 14>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 15>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 16>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul5', ExtendedKalmanFilter.cpp:144) [49]  (2.796 ns)
+
+ <State 17>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 18>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 19>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 20>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 21>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 22>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 23>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 24>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 25>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 26>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 27>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 28>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 29>: 2.796ns
+The critical path consists of the following:
+	'dmul' operation 64 bit ('mul352_1', ExtendedKalmanFilter.cpp:144) [53]  (2.796 ns)
+
+ <State 30>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 31>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 32>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 33>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 34>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 35>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 36>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 37>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 38>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 39>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 40>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 41>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 42>: 2.320ns
+The critical path consists of the following:
+	'dadd' operation 64 bit ('add357_1', ExtendedKalmanFilter.cpp:144) [54]  (2.320 ns)
+
+ <State 43>: 2.266ns
+The critical path consists of the following:
+	'getelementptr' operation 4 bit ('temp2_addr', ExtendedKalmanFilter.cpp:142) [44]  (0.000 ns)
+	'store' operation 0 bit ('store_ln144', ExtendedKalmanFilter.cpp:144) of variable 'add357_1', ExtendedKalmanFilter.cpp:144 on array 'temp2' [55]  (2.266 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
